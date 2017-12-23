@@ -48,83 +48,23 @@
         </nav>
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#" class="btn-111" onclick="subMenu1()">CS 111</a>
-                <ul id="111" class="cs111">
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="#">C++ Basic</a></li>
-                    <li><a href="#">Decisions</a></li>
-                    <li><a href="#">Printing Patterns</a></li>
-                    <li><a href="#">Functions</a></li>
-                    <li><a href="#">Function Headers</a></li>
-                    <li><a href="#">Midterm Review</a></li>
-                    <li><a href="#">Recursion</a></li>
-                    <li><a href="#">Arrays</a></li>
-                    <li><a href="#">Strings</a></li>
-                    <li><a href="#">File IO</a></li>
-                    <li><a href="#">Final Review</a></li>
-                </ul>  
-            <a href="#" class="btn-211" onclick="subMenu2()">CS 211</a>
-                <ul id="211" class="cs211" >
-                    <li><a href="#">Equivalent Arrays</a></li>
-                    <li><a href="#">Score the Race</a></li>
-                    <li><a href="#">2D 8Queens</a></li>
-                    <li><a href="#">1D 8Queens</a></li>
-                    <li><a href="#">Eight Numbers</a></li>
-                    <li><a href="#">Pointers</a></li>
-                    <li><a href="#">Stable Marriage</a></li>
-                    <li><a href="#">Integration</a></li>
-                    <li><a href="#">Fancy Queens</a></li>
-                    <li><a href="#">nQueens</a></li>
-                    <li><a href="#">Midterm Review</a></li>
-                    <li><a href="#">Towers of Hanoi</a></li>
-                    <li><a href="#">Shortest Path</a></li>
-                    <li><a href="#">kBishops</a></li>
-                    <li><a href="#">Rat Class</a></li>
-                    <li><a href="#">Final Review</a></li>
-                </ul> 
-            <a href="#" class="btn-java">Java</a>
-            <a href="#" class="btn-ds">Data Structure</a>
+            <a href="../CS111/cs111.html" >CS 111</a> 
+            <a href="../CS211/cs211.html">CS 211</a> 
+            <a href="../Java/java.html">Java</a>
+            <a href="../Data Structures/ds.html">Data Structure</a>
         </div>
         <section id="main">
             <h1>Data Structure</h1>
         </section>
         <script>
-            var menu1 = false;
-            var menu2 = false;
             function openSlideMenu(){
                 document.getElementById('side-menu').style.width='250px';
                 document.getElementById('main').style.marginLeft = '250px';
             }
 
             function closeSlideMenu(){
-                if(menu1) subMenu1();
-                if(menu2) subMenu2();
                 document.getElementById('side-menu').style.width='0';
                 document.getElementById('main').style.marginLeft = '0';
-            }
-            function subMenu1(){
-                if(!menu1) {
-                    document.getElementById('111').style.height='500px';
-                    document.getElementById('111').style.display='block';
-                    menu1 = true;
-                }
-                else {
-                    document.getElementById('111').style.height='0';
-                    document.getElementById('111').style.display='none';
-                    menu1 = false;
-                }
-            }
-            function subMenu2(){
-                if(!menu2) {
-                    document.getElementById('211').style.height='650px';
-                    document.getElementById('211').style.display='block';
-                    menu2 = true;
-                }
-                else {
-                    document.getElementById('211').style.height='0';
-                    document.getElementById('211').style.display='none';
-                    menu2 = false;
-                }
             }
         </script>
     </body>

@@ -8,24 +8,9 @@
         <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
         <title>Alex Chen | Queens College CS </title>
         <link rel="stylesheet" href="211_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div id="logo">
-                    <h1>CS211 - Intermediate C++</h1>
-                </div>
-                <div id="info">
-                    <ul>
-                        <li>Alex Chen (Jia)</li>
-                        <li>Adjunct Lecturer</li>
-                        <li>Email:axchen93@gmail.com</li>
-                        <li>Room:SB A201</li>
-                        <li>Office Hours: By appointment</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
         <nav class="navbar">
             <span class="open-slide">
                 <a href="#" onclick="openSlideMenu()">
@@ -82,88 +67,107 @@
         </nav>
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#" class="btn-111" onclick="subMenu1()">CS 111</a>
-                <ul id="111" class="cs111">
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="#">C++ Basic</a></li>
-                    <li><a href="#">Decisions</a></li>
-                    <li><a href="#">Printing Patterns</a></li>
-                    <li><a href="#">Functions</a></li>
-                    <li><a href="#">Function Headers</a></li>
-                    <li><a href="#">Midterm Review</a></li>
-                    <li><a href="#">Recursion</a></li>
-                    <li><a href="#">Arrays</a></li>
-                    <li><a href="#">Strings</a></li>
-                    <li><a href="#">File IO</a></li>
-                    <li><a href="#">Final Review</a></li>
-                </ul>  
-            <a href="#" class="btn-211" onclick="subMenu2()">CS 211</a>
-                <ul id="211" class="cs211" >
+            <a href="../CS111/cs111.html" >CS 111</a> 
+            <a href="../CS211/cs211.html">CS 211</a> 
+            <a href="../Java/java.html">Java</a>
+            <a href="../Data Structures/ds.html">Data Structure</a>
+        </div>
+        
+        <div class="img1">
+            <div class="text1">
+                <span class="border">
+                    <h1>CS211 - Intermediate C++</h1>
+                </span>
+            </div>
+        </div>
+        <section class="section-1">
+            <div><h3>Course Information</h3></div>
+            <div class="section-1a">
+                <div>
+                    <ul>
+                        <li>Alex Chen (Jia)</li>
+                        <li>Adjunct Lecturer</li>
+                        <li>Email:axchen93@gmail.com</li>
+                        <li>Room:SB A201</li>
+                        <li>Office Hours: By appointment</li>
+                        <li><a href="Resource/syllabus.pdf">Syllabus</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Grading</h4>
+                    <ul class="grade">
+                        <li>2 Quizzes: 10%</li>
+                        <li>Projects: 30%</li>
+                        <li>Midterm/Final: 70%</li>
+                    </ul>
+                    <p>All projects are to be submitted on Blackboard</p>
+                    <a href="#">Course Info</a>
+                </div> 
+            </div>
+        </section>
+
+        <div class="img2">
+                <div class="text2">
+                    <span class="border">
+                        Concepts
+                    </span>
+                </div>
+        </div>
+        <section class="section-2">
+                <ul>
+                    <li><a href="#">Backtracking</a></li>
+                    <li><a href="#">Pointers</a></li>
+                    <li><a href="#">Hexadecimal</a></li>
+                    <li><a href="#">Typedef</a></li>
+                    <li><a href="#">Dynamic Memory</a></li>
+                    <li><a href="#">Memoization</a></li>
+                    <li><a href="#">Vectors</a></li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+        </section>
+
+        <div class="img3">
+                <div class="text3">
+                    <span class="border">
+                        Projects
+                    </span>
+                </div>
+        </div>
+        <section class="section-3">
+                <ul>
                     <li><a href="#">Equivalent Arrays</a></li>
                     <li><a href="#">Score the Race</a></li>
                     <li><a href="#">2D 8Queens</a></li>
                     <li><a href="#">1D 8Queens</a></li>
                     <li><a href="#">Eight Numbers</a></li>
-                    <li><a href="#">Pointers</a></li>
                     <li><a href="#">Stable Marriage</a></li>
+                </ul>
+                <ul>
                     <li><a href="#">Integration</a></li>
                     <li><a href="#">Fancy Queens</a></li>
                     <li><a href="#">nQueens</a></li>
-                    <li><a href="#">Midterm Review</a></li>
                     <li><a href="#">Towers of Hanoi</a></li>
                     <li><a href="#">Shortest Path</a></li>
                     <li><a href="#">kBishops</a></li>
                     <li><a href="#">Rat Class</a></li>
-                    <li><a href="#">Final Review</a></li>
-                </ul> 
-            <a href="#" class="btn-java">Java</a>
-            <a href="#" class="btn-ds">Data Structure</a>
-        </div>
-        <section id="main">
-            <h1>CS 211
-            </h1>
+                </ul>
         </section>
         <script>
-            var menu1 = false;
-            var menu2 = false;
             function openSlideMenu(){
                 document.getElementById('side-menu').style.width='250px';
                 document.getElementById('main').style.marginLeft = '250px';
             }
 
             function closeSlideMenu(){
-                if(menu1) subMenu1();
-                if(menu2) subMenu2();
                 document.getElementById('side-menu').style.width='0';
                 document.getElementById('main').style.marginLeft = '0';
             }
-            function subMenu1(){
-                if(!menu1) {
-                    document.getElementById('111').style.height='500px';
-                    document.getElementById('111').style.display='block';
-                    menu1 = true;
-                }
-                else {
-                    document.getElementById('111').style.height='0';
-                    document.getElementById('111').style.display='none';
-                    menu1 = false;
-                }
-            }
-            function subMenu2(){
-                if(!menu2) {
-                    document.getElementById('211').style.height='650px';
-                    document.getElementById('211').style.display='block';
-                    menu2 = true;
-                }
-                else {
-                    document.getElementById('211').style.height='0';
-                    document.getElementById('211').style.display='none';
-                    menu2 = false;
-                }
-            }
         </script>
     </body>
-
+    <footer class="foot">
+            <p class="name">Created by: Alex Chen</p>
+            <p class="contact">Contact information: axchen93@gmail.com</p>
+    </footer>
 
 
 

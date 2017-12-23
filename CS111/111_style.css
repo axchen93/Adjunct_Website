@@ -183,24 +183,6 @@ header #logo{
     font-size: 40px;
     margin-left:50px;
 }
-.cs111{
-    display: none;
-}
-.cs111 a{
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0;
-    list-style: none;
-}
-.cs211{
-    display: none;
-}
-.cs211 a{
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0;
-    list-style: none;
-}
 
 #main{
     transition:margin-left 0.5s;
