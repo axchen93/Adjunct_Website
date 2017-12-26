@@ -162,17 +162,17 @@ body{
 }
 
 .img1{
-    background-image: url('../img/london1.jpg');
+    background-image: url('img/london1.jpg');
     height: 85vh;
     padding-bottom: 105px;
 }
 
 .img2{
-    background-image: url('../img/london2.jpg');
+    background-image: url('img/london2.jpg');
     height: 30vh;
 }
 .img3{
-    background-image: url('../img/london3.jpg');
+    background-image: url('img/london3.jpg');
     height: 30vh;
 }
 .border{
@@ -212,6 +212,16 @@ body{
 
 .section-1 li{
     list-style: none;
+}
+
+.grading h4{
+    margin: 10px;
+}
+.grading ul{
+    margin: 0;
+}
+.grading p{
+    margin: 0;
 }
 
 .section-1 a{

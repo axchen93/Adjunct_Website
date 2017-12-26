@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "author" content ="Alex Chen">
+        <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
+        <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
+        <title>Alex Chen | Queens College CS </title>
+        <link rel="stylesheet" href="note_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <h1>CS211 - Intermediate C++ Notes</h1>
+                </div>
+                <div id="info">
+                    <ul>
+                        <li>Alex Chen (Jia)</li>
+                        <li>Adjunct Lecturer</li>
+                        <li>Email:axchen93@gmail.com</li>
+                        <li>Room:SB A201</li>
+                        <li>Office Hours: By appointment</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+            <ul class="navbar-nav">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../CS211.html">Course Info</a></li>
+                <div class="note-drop">
+                    <li><a href="Notes.html" >Notes</a></li>
+                        <div class="note-slide">
+                            <li><a href="#backtrack">Backtracking</a></li>
+                            <li><a href="#pointer">Pointers</a></li>
+                            <li><a href="#hexadecimal">Hexadecimal</a></li>
+                            <li><a href="#typedef">Typedef</a></li>
+                            <li><a href="#dynamic">Dynamic Memory</a></li>
+                            <li><a href="#memo">Memoization</a></li>
+                            <li><a href="#vector">Vectors</a></li>
+                            <li><a href="#class">Class</a></li>
+                        </div>
+                </div>
+                <div class="project-drop">
+                    <li><a href="#">Projects</a></li>
+                        <div class="project-slide">
+                            <li><a href="#">Equivalent Arrays</a></li>
+                            <li><a href="#">Score the Race</a></li>
+                            <li><a href="#">2D 8Queens</a></li>
+                            <li><a href="#">1D 8Queens</a></li>
+                            <li><a href="#">Eight Numbers</a></li>
+                            <li><a href="#">Stable Marriage</a></li>
+                            <li><a href="#">Integration</a></li>
+                            <li><a href="#">Fancy Queens</a></li>
+                            <li><a href="#">nQueens</a></li>
+                            <li><a href="#">Towers of Hanoi</a></li>
+                            <li><a href="#">Shortest Path</a></li>
+                            <li><a href="#">kBishops</a></li>
+                            <li><a href="#">Rat Class</a></li>
+                        </div>
+                </div>
+                <div class="review-drop">
+                    <li><a href="#">Review</a></li>
+                        <div class="review-slide">
+                            <li><a href="Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
+                            <li><a href="Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
+                        </div>
+                </div>
+                <li><a href="http://venus.cs.qc.edu/~waxman/211/" target="_blank">Waxman's Website</a></li>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="../../CS111/CS111.html" >CS 111</a> 
+            <a href="../CS211.html">CS 211</a> 
+            <a href="../../Java/java.html">Java</a>
+            <a href="../../Data Structures/ds.html">Data Structure</a>
+        </div>
+
+        <div id="main">
+
+            <section id="backtrack">
+                <div class="img">
+                    <div class="text">
+                        <h2>Backtracking</h2>
+                    </div>
+                </div>
+                <div id="backtrack-info" class="info">
+                    <h3>General</h3>
+                    <p>Backtracking is an algorithm for finding all possible solutions to some computational problems. 
+                        The solutions are found by incrementally building candidates for possible solutions and checking 
+                        for its validity. If it determines that the candidate cannot be part of a valid solution, it abandons 
+                        that configuration. Backtracking can be applied to problems that allows for partial solutions, meaning 
+                        part of a configuration can be used to determine if it is a member the full solution. Backtracking 
+                        allows the possibility of eliminating large number of solutions in a single test; this makes backtracking, 
+                        often much faster than a brute force approach. </p>
+                    <h3>Backtracking for 8 Queens</h3>
+                    <p>Place the queens on one column at a time starting in the first column. Every time a queen is placed 
+                        in a square, there are eight possible places to place a queen in the next column. If a queen cannot 
+                        be placed in a column safely and it runs out of rows to check, the program must backtrack to the 
+                        previous column and continue to the next row. If a queen is safely placed in the last column, it 
+                        means that is one possible solution to the 8 Queens problem.</p>
+                    <h4>Projects involving backtracking</h4>
+                    <ul>
+                        <li><a href="#">2D 8Queens</a></li>
+                        <li><a href="#">1D 8Queens</a></li>
+                        <li><a href="#">Eight Numbers</a></li>
+                        <li><a href="#">Stable Marriage</a></li>
+                        <li><a href="#">Fancy Queens</a></li>
+                        <li><a href="#">nQueens</a></li>
+                        <li><a href="#">kBishops</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="pointer">
+                <div class="img">
+                    <div class="text">
+                        <h2>Pointers</h2>
+                    </div>
+                </div>
+                <div id="pointer-info" class="info">
+                    <h3>Pointers</h3>
+                    <p>A pointer stores the address of another variable in memory
+                        <br>A pointer is declared with an *
+                        <br>int* x = &p; Declares a pointer called x and it is storing the address of p
+                        <br>*x is a reference to the variable p
+                        <br>we can reassign values to p by using *x
+                        <br>We can deference a pointer by using the *also 
+                        <br>Dereferencing a pointer gives the value that pointer was pointing to
+                    </p>
+                    <div class="code">
+                            #include <iostream>
+                            using namespace std;
+                            
+                            int main() {
+                                int x = 5;
+                                int* p = &x;            // declare an int pointer and assign x's address to it
+                                cout << p << endl;      // print the address that p is pointing to
+                                cout << *p << endl;     // print the value that p is pointing to
+                                *p = 6;                 // assign 6 to x
+                                cout << x << endl;      // print x (6)
+                            
+                                int& r = x;             // declare r as a reference to x
+                                r = 7;                  // assign 7 to x
+                                cout << r;              // print x (7)
+                                return 0;
+                            }
+                    </div>
+                    <h3>Arrays as Pointers</h3>
+                    <p>An array is a fixed sized collections of elements of the same type, stored continuously in memory.
+                        <br>Array names are not pointers. However they are converted to pointers when we do arithmetic
+                        <br>When you +1 to a pointer, you increase the address by the size of what it is pointing to.
+                        <br>When you add to an array name, you point to an element in that array.
+                        <br>c+0 points to the first element
+                        <br>c+1 points to the second element
+                        <br>c+1 returns an address, so *(c+1) returns the value stored at the address. Same thing as c[1]
+                        <br>In a 2D array, each element is a row in the array 
+                        <br>Sizeof(arrayName) gives you the size of the array
+                        <br>Sizeof(pointer) gives the size of the pointer
+                    </p>
+                </div>
+            </section>
+
+            <section id="hexadecimal">
+                <div class="img">
+                    <div class="text">
+                        <h2>Hexadecimal</h2>
+                    </div>
+                </div>
+                <div id="hex-info" class="info">
+                    
+                </div>
+            </section>
+
+            <section id="typedef">
+                <div class="img">
+                    <div class="text">
+                        <h2>Typedef</h2>
+                    </div>
+                </div>
+                <div id="typedef-info" class="info">
+                    
+                </div>
+            </section>
+            
+            <section id="dynamic">
+                <div class="img">
+                    <div class="text">
+                        <h2>Dynamic Memory</h2>
+                    </div>
+                </div>
+                <div id="dynamic-info" class="info">
+                    
+                </div>
+            </section>
+
+            <section id="memo">
+                <div class="img">
+                    <div class="text">
+                        <h2>Memoization</h2>
+                    </div>
+                </div>
+                <div id="memo-info" class="info">
+                    
+                </div>
+            </section>
+
+            <section id="vector">
+                <div class="img">
+                    <div class="text">
+                        <h2>Vectors</h2>
+                    </div>
+                </div>
+                <div id="vector-info" class="info">
+                    
+                </div>
+            </section>
+
+            <section id="class">
+                <div class="img">
+                    <div class="text">
+                        <h2>Class</h2>
+                    </div>
+                </div>
+                <div id="class-info" class="info">
+                    
+                </div>
+            </section>
+        </div>
+
+        <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width='250px';
+                document.getElementById('backtrack-info').style.marginLeft='250px';
+                document.getElementById('pointer-info').style.marginLeft='250px';
+                document.getElementById('hex-info').style.marginLeft='250px';
+                document.getElementById('typedef-info').style.marginLeft='250px';
+                document.getElementById('dynamic-info').style.marginLeft='250px';
+                document.getElementById('memo-info').style.marginLeft='250px';
+                document.getElementById('vector-info').style.marginLeft='250px';
+                document.getElementById('class-info').style.marginLeft='250px';
+            }
+
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width='0';
+                document.getElementById('backtrack-info').style.marginLeft='0';
+                document.getElementById('pointer-info').style.marginLeft='0';
+                document.getElementById('hex-info').style.marginLeft='0';
+                document.getElementById('typedef-info').style.marginLeft='0';
+                document.getElementById('dynamic-info').style.marginLeft='0';
+                document.getElementById('memo-info').style.marginLeft='0';
+                document.getElementById('vector-info').style.marginLeft='0';
+                document.getElementById('class-info').style.marginLeft='0';
+            }
+        </script>
+    </body>
+    <footer class="foot">
+        <p class="name">Created by: Alex Chen</p>
+        <p class="contact">Contact information: axchen93@gmail.com</p>
+    </footer>
+</html>

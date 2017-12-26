@@ -162,17 +162,17 @@ body{
 }
 
 .img1{
-    background-image: url('../img/city1.jpg');
+    background-image: url('img/city1.jpg');
     height: 85vh;
     padding-bottom: 105px;
 }
 
 .img2{
-    background-image: url('../img/city2.jpg');
+    background-image: url('img/city2.jpg');
     height: 30vh;
 }
 .img3{
-    background-image: url('../img/city3.jpg');
+    background-image: url('img/city3.jpg');
     height: 30vh;
 }
 .border{
@@ -213,7 +213,15 @@ body{
 .section-1 li{
     list-style: none;
 }
-
+.grading h4{
+    margin: 10px;
+}
+.grading ul{
+    margin: 0;
+}
+.grading p{
+    margin: 0;
+}
 .section-1 a{
     text-decoration: none;
     color: rgb(238, 71, 71);
