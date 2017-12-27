@@ -14,7 +14,7 @@
         <header>
             <div class="container">
                 <div id="logo">
-                    <h1>CS211 - Intermediate C++ Notes</h1>
+                    <h1>CS211 - Notes</h1>
                 </div>
                 <div id="info">
                     <ul>
@@ -75,8 +75,8 @@
                 <div class="review-drop">
                     <li><a href="#">Review</a></li>
                         <div class="review-slide">
-                            <li><a href="Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
-                            <li><a href="Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
+                            <li><a href="../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
+                            <li><a href="../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
                         </div>
                 </div>
                 <li><a href="http://venus.cs.qc.edu/~waxman/211/" target="_blank">Waxman's Website</a></li>
@@ -103,6 +103,7 @@
                     <h3>General</h3>
                     <p>Backtracking is an algorithm for finding all possible solutions to some computational problems. 
                         The solutions are found by incrementally building candidates for possible solutions and checking 
+                        The solutions are found by incrementally building candidates for possible solutions and checking 
                         for its validity. If it determines that the candidate cannot be part of a valid solution, it abandons 
                         that configuration. Backtracking can be applied to problems that allows for partial solutions, meaning 
                         part of a configuration can be used to determine if it is a member the full solution. Backtracking 
@@ -114,7 +115,7 @@
                         be placed in a column safely and it runs out of rows to check, the program must backtrack to the 
                         previous column and continue to the next row. If a queen is safely placed in the last column, it 
                         means that is one possible solution to the 8 Queens problem.</p>
-                    <h4>Projects involving backtracking</h4>
+                    <h3>Projects involving backtracking</h3>
                     <ul>
                         <li><a href="#">2D 8Queens</a></li>
                         <li><a href="#">1D 8Queens</a></li>
@@ -134,45 +135,57 @@
                     </div>
                 </div>
                 <div id="pointer-info" class="info">
-                    <h3>Pointers</h3>
-                    <p>A pointer stores the address of another variable in memory
-                        <br>A pointer is declared with an *
-                        <br>int* x = &p; Declares a pointer called x and it is storing the address of p
-                        <br>*x is a reference to the variable p
-                        <br>we can reassign values to p by using *x
-                        <br>We can deference a pointer by using the *also 
-                        <br>Dereferencing a pointer gives the value that pointer was pointing to
+                    <div class="pointer">
+                        <h3>Pointers</h3>
+                        <p>A pointer stores the address of another variable in memory
+                            <br>A pointer is declared with an *
+                            <br>int* x = &p; Declares a pointer called x and it is storing the address of p
+                            <br>*x is a reference to the variable p
+                            <br>we can reassign values to p by using *x
+                            <br>We can deference a pointer by using the *also 
+                            <br>Dereferencing a pointer gives the value that pointer was pointing to
+                        </p>
+                    <p class="code">
+                        int x = 5;
+                        int* p = &x;          <span class="comment">// declare an int pointer and assign x's address to it</span>
+                        cout << p << endl;    <span class="comment">// print the address that p is pointing to</span>
+                        cout << *p << endl;   <span class="comment">// print the value that p is pointing to</span>
+                        *p = 6;               <span class="comment">// assign 6 to x</span>
+                        cout << x << endl;    <span class="comment">// print x (6)</span>
+
+                        int& r = x;           <span class="comment">// declare r as a reference to x</span>
+                        r = 7;                <span class="comment">// assign 7 to x</span>
+                        cout << r;            <span class="comment">// print x (7)</span>
+                        return 0;
                     </p>
-                    <div class="code">
-                            #include <iostream>
-                            using namespace std;
-                            
-                            int main() {
-                                int x = 5;
-                                int* p = &x;            // declare an int pointer and assign x's address to it
-                                cout << p << endl;      // print the address that p is pointing to
-                                cout << *p << endl;     // print the value that p is pointing to
-                                *p = 6;                 // assign 6 to x
-                                cout << x << endl;      // print x (6)
-                            
-                                int& r = x;             // declare r as a reference to x
-                                r = 7;                  // assign 7 to x
-                                cout << r;              // print x (7)
-                                return 0;
-                            }
                     </div>
-                    <h3>Arrays as Pointers</h3>
-                    <p>An array is a fixed sized collections of elements of the same type, stored continuously in memory.
-                        <br>Array names are not pointers. However they are converted to pointers when we do arithmetic
-                        <br>When you +1 to a pointer, you increase the address by the size of what it is pointing to.
-                        <br>When you add to an array name, you point to an element in that array.
-                        <br>c+0 points to the first element
-                        <br>c+1 points to the second element
-                        <br>c+1 returns an address, so *(c+1) returns the value stored at the address. Same thing as c[1]
-                        <br>In a 2D array, each element is a row in the array 
-                        <br>Sizeof(arrayName) gives you the size of the array
-                        <br>Sizeof(pointer) gives the size of the pointer
+                    <div class="array">
+                        <h3>Arrays as Pointers</h3>
+                        <p>An array is a fixed sized collections of elements of the same type, stored continuously in memory.
+                            <br>Array names are not pointers. However they are converted to pointers when we do arithmetic
+                            <br>When you +1 to a pointer, you increase the address by the size of what it is pointing to.
+                            <br>When you add to an array name, you point to an element in that array.
+                            <br>In a 2D array, each element is a row in the array 
+                            <br>Sizeof(arrayName) gives you the size of the array
+                            <br>Sizeof(pointer) gives the size of the pointer
+                        </p>
+                    <p class="code">
+                        <span class="comment">// b is a 2D array, so each element is a 1D array.
+                        //assuming int are 4bytes and pointers are 8 byte</span> 
+                        int b[3][4];
+                        cout << sizeof(b) << endl;      <span class="comment">// size of 2D array = 3*4*4</span>
+                        cout << sizeof(b+0) << endl;    <span class="comment">// size of pointer to 1st 1d array = 8</span>
+                        cout << sizeof(*(b+0)) << endl; <span class="comment">// size of 1st 1d array = 4*4</span>
+
+                        cout << "The address of b is: " << b << endl;     <span class="comment">// address of b</span>
+                        cout << "The address of b+1 is: " << b+1 << endl; <span class="comment">// address of b + (4*4)</span>
+                        <span class="comment">// &b is a pointer to the entire array, rather than the 1st element.
+                        // It's the same address but a different type, so adding 1 doesn't have the same effect.</span>
+                        cout << "The address of &b is: " << &b << endl;   <span class="comment">// address of b</span>
+                        cout << "The address of &b+1 is: " << &b+1;       <span class="comment">// address of b + (3*4*4)</span>
+                        return 0;
                     </p>
+                    </div>
                 </div>
             </section>
 
