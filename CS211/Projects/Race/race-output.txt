@@ -1,0 +1,16 @@
+Enter the race outcome: ZZAZAA
+There are 2 teams.
+Each team has 3 runners.
+A: 4.66667
+Z: 2.33333
+The winning team is team Z with score 2.33333
+Enter the race outcome: ABBCAC
+There are 3 teams.
+Each team has 2 runners.
+A: 3
+B: 2.5
+C: 5
+The winning team is team B with score 2.5
+Enter the race outcome: ABA
+The teams don't have the same number of runners.
+Enter the race outcome: done

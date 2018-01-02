@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     padding :0;
@@ -13,14 +13,12 @@ body{
     overflow: hidden;
 }
 header{
-    background-image: url('../img/city1.jpg');
-    background-position-y: -300px;
+    background: #385f77;
     color: #ffffff;
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
     border-bottom:#ffffff 3px solid;
-    opacity: 0.7;
 }
 header a{
     color: #ffffff;
@@ -68,22 +66,22 @@ header #logo{
     font-weight: bold;
     color: #28b9f3;
 }
-/*****Start*****Style for nav bar NOTES dropdown menu*/
-.note-slide{
-    margin-left: 298px;
+/*****Start*****Style for nav bar LECTURE dropdown menu*/
+.lec-slide{
+    margin-left: 310px;
 }
-.note-slide a{
+.lec-slide a{
     font-size: 15px;
     line-height: 10px;
     float: none;
     display: block;
 }
-.note-slide a:hover{
+.lec-slide a:hover{
     color:#fff;
     background: none;
     font:bold;
 }
-.note-drop .note-slide{
+.lec-drop .lec-slide{
     background-color: #111111;
     opacity: 0.9;
     position: absolute;
@@ -91,27 +89,28 @@ header #logo{
     margin-top: 60px;
     visibility: hidden;
 }
-.note-drop:hover .note-slide{
+.lec-drop:hover .lec-slide{
     visibility: visible;
 
 }
-/*****END********Style for nav bar NOTES dropdown menu*/
-/*****Start*****Style for nav bar PROJECT dropdown menu*/
-.project-slide{
-    margin-left: 420px;
+/*****END********Style for nav bar LECTURE dropdown menu*/
+
+/*****Start*****Style for nav bar ASSIGNMENT dropdown menu*/
+.asign-slide{
+    margin-left:477px;
 }
-.project-slide a{
+.asign-slide a{
     font-size: 15px;
     line-height: 10px;
     float: none;
     display: block;
 }
-.project-slide a:hover{
+.asign-slide a:hover{
     color:#fff;
     background: none;
     font:bold;
 }
-.project-drop .project-slide{
+.asign-drop .asign-slide{
     background-color: #111111;
     opacity: 0.9;
     position: absolute;
@@ -119,14 +118,13 @@ header #logo{
     margin-top: 60px;
     visibility: hidden;
 }
-.project-drop:hover .project-slide{
+.asign-drop:hover .asign-slide{
     visibility: visible;
-
 }
-/*****END********Style for nav bar PROJECT dropdown menu*/
+/*****END********Style for nav bar ASSIGNMENT dropdown menu*/
 /*****Start*****Style for nav bar REVIEW dropdown menu*/
 .review-slide{
-    margin-left:550px;
+    margin-left:620px;
 }
 .review-slide a{
     font-size: 15px;
@@ -185,79 +183,27 @@ header #logo{
     font-size: 40px;
     margin-left:50px;
 }
+.cs111{
+    display: none;
+}
+.cs111 a{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    list-style: none;
+}
+.cs211{
+    display: none;
+}
+.cs211 a{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    list-style: none;
+}
 
 #main{
-    background-color: #2b2a2a;
-    color:#fff;
-    overflow: hidden;
-    border-bottom:#ffffff 1px solid;
-    padding: 0 100px;
-}
-#main a{
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-}
-.text{
-    background-color: rgba(0, 0, 0, 0.7);
-    display:inline-block;
-    padding:5px;
-    border-radius: 10px;
-
-}
-.img{
-    text-align: center;
-    background-size: cover;
-    overflow: hidden;
-    opacity: 0.7;
-    height: 100px;
-}
-
-#backtrack .img{
-    background-image: url('img/back.jpg');
-}
-
-#pointer .img{
-    background-image: url('img/pointer.jpg');
-    background-position-y: -550px;
-}
-
-#hexadecimal .img{
-    background-image: url('img/hex.jpg');
-}
-
-#typedef .img{
-    background-image: url('img/type.jpg');
-    background-position-y: -600px;
-}
-
-#dynamic .img{
-    background-image: url('img/dynamic.jpg');
-    background-position-y: -250px;
-}
-
-#memo .img{
-    background-image: url('img/memo.jpg');
-    background-position-y: -500px;
-}
-#vector .img{
-    background-image: url('img/vector.jpg');
-    background-position-y: -150px;
-}
-
-#class .img{
-    background-image: url('img/class.jpg');
-    background-position-y: -300px;
-}
-.foot{
-    background: #35424a;
+    transition:margin-left 0.5s;
     overflow:hidden;
-    height:50px;
-    display: flex;
-    padding: 0 20px;
-    color: #fff;
-    
-}
-.foot .name{
-    padding-right: 100px;
+    padding: 20px;
 }

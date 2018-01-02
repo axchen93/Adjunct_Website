@@ -1,0 +1,10 @@
+Enter value of n: 4
+Enter value of k: 3
+Number of solutions: 232
+Enter value of n: 4
+Enter value of k: 4
+Number of solutions: 260
+Enter value of n: 5
+Enter value of k: 3
+Number of solutions: 1124
+Enter value of n: -1

@@ -1,0 +1,17 @@
+Please enter the number of rings to move: 4
+
+Move #1: Transfer ring 1 from tower A to tower C
+Move #2: Transfer ring 2 from tower A to tower B
+Move #3: Transfer ring 1 from tower C to tower B
+Move #4: Transfer ring 3 from tower A to tower C
+Move #5: Transfer ring 1 from tower B to tower A
+Move #6: Transfer ring 2 from tower B to tower C
+Move #7: Transfer ring 1 from tower A to tower C
+Move #8: Transfer ring 4 from tower A to tower B
+Move #9: Transfer ring 1 from tower C to tower B
+Move #10: Transfer ring 2 from tower C to tower A
+Move #11: Transfer ring 1 from tower B to tower A
+Move #12: Transfer ring 3 from tower C to tower B
+Move #13: Transfer ring 1 from tower A to tower C
+Move #14: Transfer ring 2 from tower A to tower B
+Move #15: Transfer ring 1 from tower C to tower B

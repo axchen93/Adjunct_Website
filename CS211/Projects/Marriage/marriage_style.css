@@ -13,32 +13,21 @@ body{
     overflow: hidden;
 }
 header{
-    background-image: url('../img/city1.jpg');
-    background-position-y: -300px;
+    background-image: url('../img/class.jpg');
+    background-position-y: -200px;
     color: #ffffff;
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
-    border-bottom:#ffffff 3px solid;
-    opacity: 0.7;
+    border-bottom:#ffffff 1px solid;
+
 }
 header a{
     color: #ffffff;
     text-decoration: none;
 }
-header ul{
-    list-style: none;
-    padding:0;
-    font-size: 25px;
-}
-header li{
-    padding: 0;
-}
-header #info{
-    float: right;
-}
 header #logo{
-    float: left;
+    text-align: center;
     margin-top: 30px;
     font-size: 30px;
 }
@@ -187,68 +176,28 @@ header #logo{
 }
 
 #main{
-    background-color: #2b2a2a;
-    color:#fff;
     overflow: hidden;
     border-bottom:#ffffff 1px solid;
+    color:#fff;
+    background-color: #2b2a2a;
+}
+.info{
     padding: 0 100px;
+    font-size: 20px;
+    text-align: left;
 }
-#main a{
-    color: #fff;
-    font-size: 30px;
+
+#backtrack h3{
+    color: #28b9f3;
+}
+#backtrack li{
+    list-style: none;
+}
+#backtrack a{
     text-decoration: none;
-}
-.text{
-    background-color: rgba(0, 0, 0, 0.7);
-    display:inline-block;
-    padding:5px;
-    border-radius: 10px;
-
-}
-.img{
-    text-align: center;
-    background-size: cover;
-    overflow: hidden;
-    opacity: 0.7;
-    height: 100px;
+    color: #ee4747;
 }
 
-#backtrack .img{
-    background-image: url('img/back.jpg');
-}
-
-#pointer .img{
-    background-image: url('img/pointer.jpg');
-    background-position-y: -550px;
-}
-
-#hexadecimal .img{
-    background-image: url('img/hex.jpg');
-}
-
-#typedef .img{
-    background-image: url('img/type.jpg');
-    background-position-y: -600px;
-}
-
-#dynamic .img{
-    background-image: url('img/dynamic.jpg');
-    background-position-y: -250px;
-}
-
-#memo .img{
-    background-image: url('img/memo.jpg');
-    background-position-y: -500px;
-}
-#vector .img{
-    background-image: url('img/vector.jpg');
-    background-position-y: -150px;
-}
-
-#class .img{
-    background-image: url('img/class.jpg');
-    background-position-y: -300px;
-}
 .foot{
     background: #35424a;
     overflow:hidden;

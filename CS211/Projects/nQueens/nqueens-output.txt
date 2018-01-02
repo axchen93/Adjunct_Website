@@ -1,0 +1,12 @@
+There are 1 solutions to the 1 queens problem.
+There are 0 solutions to the 2 queens problem.
+There are 0 solutions to the 3 queens problem.
+There are 2 solutions to the 4 queens problem.
+There are 10 solutions to the 5 queens problem.
+There are 4 solutions to the 6 queens problem.
+There are 40 solutions to the 7 queens problem.
+There are 92 solutions to the 8 queens problem.
+There are 352 solutions to the 9 queens problem.
+There are 724 solutions to the 10 queens problem.
+There are 2680 solutions to the 11 queens problem.
+There are 14200 solutions to the 12 queens problem.

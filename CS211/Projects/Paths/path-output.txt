@@ -1,0 +1,2 @@
+The length of the shortest path is 16.
+The rows of the path from left to right are 012334.

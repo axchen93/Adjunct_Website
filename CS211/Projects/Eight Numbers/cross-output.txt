@@ -1,0 +1,20 @@
+Solution #1
+ 53
+2817
+ 64
+
+Solution #2
+ 64
+2817
+ 53
+
+Solution #3
+ 35
+7182
+ 46
+
+Solution #4
+ 46
+7182
+ 35
+
