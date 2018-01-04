@@ -179,6 +179,7 @@ header #logo{
     border-bottom:#ffffff 1px solid;
     color:#fff;
     background-color: #2b2a2a;
+    padding: 0 300px;
 }
 .info{
     padding: 0 100px;

@@ -4,7 +4,7 @@ body{
     line-height: 1.5;
     padding :0;
     margin: 0;
-    background-color: #deecf8a9;
+    background-color: #2b2a2a;
     list-style: none;
 }
 .container{
@@ -176,11 +176,14 @@ header #logo{
 
 #main{
     overflow: hidden;
-    border-bottom:#ffffff 1px solid;
     color:#fff;
-    background-color: #2b2a2a;
+    padding: 0 300px;
+    font-size: 20px;
 }
-
+#main h3{
+    color: #28b9f3;
+    font-size: 30px;
+}
 .foot{
     background: #35424a;
     overflow:hidden;
@@ -188,6 +191,7 @@ header #logo{
     display: flex;
     padding: 0 20px;
     color: #fff;
+    border-top:#ffffff 1px solid;
     
 }
 .foot .name{

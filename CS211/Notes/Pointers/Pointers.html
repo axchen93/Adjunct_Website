@@ -30,8 +30,8 @@
                 </a>
             </span>
             <ul class="navbar-nav">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../CS211.html">Course Info</a></li>
+                <li><a href="../../../">Home</a></li>
+                <li><a href="../../">Course Info</a></li>
                 <div class="note-drop">
                     <li><a href="../Notes.html">Notes</a></li>
                         <div class="note-slide">
@@ -46,7 +46,7 @@
                         </div>
                 </div>
                 <div class="project-drop">
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="../../Projects/">Projects</a></li>
                         <div class="project-slide">
                             <li><a href="#">Equivalent Arrays</a></li>
                             <li><a href="#">Score the Race</a></li>
@@ -64,10 +64,10 @@
                         </div>
                 </div>
                 <div class="review-drop">
-                    <li><a href="#">Review</a></li>
+                    <li><a href="">Review</a></li>
                         <div class="review-slide">
-                            <li><a href="../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
-                            <li><a href="../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
+                            <li><a href="../../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
+                            <li><a href="../../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
                         </div>
                 </div>
                 <li><a href="http://venus.cs.qc.edu/~waxman/211/" target="_blank">Waxman's Website</a></li>
@@ -76,10 +76,10 @@
 
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="../../CS111/CS111.html" >CS 111</a> 
-            <a href="../CS211.html">CS 211</a> 
-            <a href="../../Java/java.html">Java</a>
-            <a href="../../Data Structures/ds.html">Data Structure</a>
+            <a href="../../../CS111/" >CS 111</a> 
+            <a href="../../">CS 211</a> 
+            <a href="../../../Java/">Java</a>
+            <a href="../../../Data Structures/">Data Structure</a>
         </div>
 
         <div id="main">
@@ -87,16 +87,42 @@
             <section id="pointers">
                 <h3>General</h3>
                 <p>
-
+                    A pointer stores the address of another variable.
+                    <br>The & operator give the address of a vairable. For example, &x is the address of x
+                    <br>The * operator is different from multipliation of two vairables.
+                    <br>In terms of pointers, * is a dereference operator. *x is the value that x is pointing to.
+                    <br>* is also used to declare a pointer
                 </p>
-                <img src="" alt="">
+                <img src="pointer.jpg" alt="pointer-code">
             </section>
 
             <section id="arrays">
                 <h3>Arrays as Pointers</h3>
                 <p>
-
+                    An array is a fixed-size collection of elements of the same type.
+                    <br>Arrays are stored in continuous memory.
+                    <br><img src="array1.jpg" alt="array1">
+                    <br>Array names are not pointers, though they can be treated like pointers in certain cases.
+                    We can deference a pointer to access whatever it is pointing to.
+                    <br><img src="array2.jpg" alt="array2">
+                    <br>a: by it self, is pointing to the beginning of the array. The array starts at index 0 so the value of *a is a[0] or 3.
+                    <br>a+0: pointing to the beginning of the array with an offset of 0. Hence it's still pointing at the first index, 3.
+                    <br>a+1: pointing to the beginning of the array with an offset of 1. But one of what? Since this array is an array of integers,
+                    the offset is the size of an integer. So a+1 is one integer away from the first index and since arrays are stored in continuous memory,
+                    a+1 is pointing to the second index, a[1] or 1.
+                    <br>a+2: pointing to the beginning of the array with an offset of 2 integers. This is pointing to the third index of the array, 
+                    a[2] or 4.                 
                 </p>
+
+                <h4>Mutli-dimenstional arrays</h4>
+                <p>
+                    A 2D array is a 1D array of 1D arrays. You can visualize it as a table, but the elements are stored continuously, starting with the 1st row
+                    and goes row by row.
+                    <br><img src="array3.jpg" alt="array3">
+                    <br>sizof(arrayName) gives you the size of the entire array in bytes.
+                    <br>sizeof(pointer) gives you the size of a pointer.
+                </p>
+                <img src="arraypointers.jpg" alt="arraypointer-code">
             </section>
 
            
@@ -105,12 +131,10 @@
         <script>
             function openSlideMenu(){
                 document.getElementById('side-menu').style.width='250px';
-                document.getElementById('backtrack-info').style.marginLeft='250px';
             }
 
             function closeSlideMenu(){
                 document.getElementById('side-menu').style.width='0';
-                document.getElementById('backtrack-info').style.marginLeft='0';
             }
         </script>
     </body>
