@@ -184,6 +184,11 @@ header #logo{
     color: #28b9f3;
     font-size: 30px;
 }
+#main a{
+    text-decoration: none;
+    color: #ee4747;
+    font-size: 25px;
+}
 .foot{
     background: #35424a;
     overflow:hidden;
