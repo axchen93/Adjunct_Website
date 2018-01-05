@@ -30,10 +30,10 @@
                 </a>
             </span>
             <ul class="navbar-nav">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../CS211.html">Course Info</a></li>
+                <li><a href="../../../">Home</a></li>
+                <li><a href="../../">Course Info</a></li>
                 <div class="note-drop">
-                    <li><a href="../Notes.html">Notes</a></li>
+                    <li><a href="../">Notes</a></li>
                         <div class="note-slide">
                             <li><a href="../Backtracking/Backtracking.html">Backtracking</a></li>
                             <li><a href="../Pointers/Pointers.html">Pointers</a></li>
@@ -46,7 +46,7 @@
                         </div>
                 </div>
                 <div class="project-drop">
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="../../Projects/">Projects</a></li>
                         <div class="project-slide">
                             <li><a href="#">Equivalent Arrays</a></li>
                             <li><a href="#">Score the Race</a></li>
@@ -66,8 +66,8 @@
                 <div class="review-drop">
                     <li><a href="#">Review</a></li>
                         <div class="review-slide">
-                            <li><a href="../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
-                            <li><a href="../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
+                            <li><a href="../../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
+                            <li><a href="../../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
                         </div>
                 </div>
                 <li><a href="http://venus.cs.qc.edu/~waxman/211/" target="_blank">Waxman's Website</a></li>
@@ -76,16 +76,83 @@
 
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="../../CS111/CS111.html" >CS 111</a> 
-            <a href="../CS211.html">CS 211</a> 
-            <a href="../../Java/java.html">Java</a>
-            <a href="../../Data Structures/ds.html">Data Structure</a>
+            <a href="../../../CS111/" >CS 111</a> 
+            <a href="../../">CS 211</a> 
+            <a href="../../../Java/">Java</a>
+            <a href="../../../Data Structures/">Data Structure</a>
         </div>
 
         <div id="main">
 
             <section id="hexadecimal">
-                
+                <h3>Hexadecimal Number System</h3>
+                <p>
+                    A hexadecimal numbering system uses 10 digits 0-9 and 6 letters A-F. 
+                    <br>The letters represents numbers staring from 10 to 15. 
+                    <br>A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
+                    <br>This is known as a base 16 number system.
+                </p>
+                <h3>Hexadecimal to Decimal</h3>
+                <p>
+                    The first position (right most) in a hexadecimal number represents a 0 power of the base (16).
+                    <br>The last position (left most) in a hexadecimal number represents an x power of the base (16), where x 
+                    represents the last position - 1.
+                    <span class ="math">
+                        <br>(1A3)₁₆
+                        <br>= (1 x 16²) + (A x 16¹) + (3 x 16⁰)
+                        <br>= (1 x 16²) + (10 x 16¹) + (3 x 16⁰)
+                        <br>= (256) + (160) + (3)
+                        <br>= 419 <br>
+                        <br>(1A3)₁₆ = (419)₁₀
+                    </span>    
+                </p>
+                <h3>Adding Hexadecimals</h3>
+                <p>
+                    <span class="sub">In decimal addition (regular addition):</span>
+                    <span class ="math"><br>9 + 1 = 10</span>
+                    <br>This is because when we added 1, we went past the highest possible value base 10 can hold in one digit, 
+                    so we needed to carry over to the next digit.<br>
+                    <span class="sub"><br>In hexadecimal addition:</span>
+                    <span class ="math"><br>9 + 1 != 10</span>
+                    <br>In hex, there is a letter that is used to represent 10, A.
+                    <br>So in hex, <span class="math">9 + 1 = A</span><br>
+                    <br><img src="hex1.jpg" alt="hex1">
+                    <br>
+                    <span class="sub"><br>Example: What is 10 + 5 in hex?<br></span>
+                    <br>Lets add 10 + 5 in regularly,<span class ="math"> 10 + 5 = 15.</span>
+                    <br>BUT THAT'S NOT THE ANSWER, we are adding hexadecimal!!
+                    <br>In hex, the letter F represents 15. So <span class ="math">10 + 5 = F </span><br>
+                    <span class="sub"><br>Example: 8 + 9 = ? Remember this is hexadecimal addition and not decimal.</span><br>
+                    <br>If we add 8 + 9 regularly we get 17. But hex cannot hold 17. Like when we added 9+1=10 in decimal, we 
+                    exceeded the number it can hold in one bit. We need to carry over. 
+                    <br><img src="hex2.jpg" alt="hex2">Now just add the remaining column<img src="hex3.jpg" alt="hex2">
+                    <br>So <span class ="math">8 + 9 = 11</span> in hex.
+                    <br>Notice how the answer is 12 and not C. That is because. We added 8 + 9, it went past C and had to go back beginning 
+                    of the number line.<br>
+                    <span class="sub"><br>So now let look at adding a decimal (base 10) to hexadecimal (base 16)<br></span>
+                    <br><span class ="math">(1A)₁₆ + (19)₁₀ = </span>?
+                    <ol>
+                        <li>We CANNOT add it straight through like before. These are two different bases. So in order to add these two number. 
+                            We need to convert one of the number. Let convert the base 10 to base 16.</li>
+                        <li>
+                            Converting to base 16 is simple. Simply take base 10 number and divide by 16 (integer division, no remainder). 
+                            In this case, <span class ="math">19 / 16 = 1</span>. This number is the leading number or the carry.
+                        </li>
+                        <li>
+                            Now take the base 10 number and mod it by 16. Mod is find the remainder. In this case <span class ="math">19 % 16 = 3</span>. 
+                            This our trailing number or sum.
+                        </li>
+                        <li>
+                            So <span class ="math">(19)₁₀ = (13)₁₆</span>
+                        </li>
+                        <li>
+                            Now we can add both number since they are both base 16.
+                        </li>
+                    </ol>
+                    <br><span class ="math">(1A)₁₆ + (19)₁₀ = (1A)₁₆ + (13)₁₆ = 2D</span>
+                </p>
+                Related: <a href="../Pointers/Pointers.html">Pointers</a>
+
             </section>
 
            
