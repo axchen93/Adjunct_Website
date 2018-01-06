@@ -30,10 +30,10 @@
                 </a>
             </span>
             <ul class="navbar-nav">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../CS211.html">Course Info</a></li>
+                <li><a href="../../../">Home</a></li>
+                <li><a href="../../">Course Info</a></li>
                 <div class="note-drop">
-                    <li><a href="../Notes.html">Notes</a></li>
+                    <li><a href="../">Notes</a></li>
                         <div class="note-slide">
                             <li><a href="../Backtracking/Backtracking.html">Backtracking</a></li>
                             <li><a href="../Pointers/Pointers.html">Pointers</a></li>
@@ -46,7 +46,7 @@
                         </div>
                 </div>
                 <div class="project-drop">
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="../../Projects/">Projects</a></li>
                         <div class="project-slide">
                             <li><a href="#">Equivalent Arrays</a></li>
                             <li><a href="#">Score the Race</a></li>
@@ -64,10 +64,10 @@
                         </div>
                 </div>
                 <div class="review-drop">
-                    <li><a href="#">Review</a></li>
+                    <li><a href="">Review</a></li>
                         <div class="review-slide">
-                            <li><a href="../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
-                            <li><a href="../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
+                            <li><a href="../../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
+                            <li><a href="../../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
                         </div>
                 </div>
                 <li><a href="http://venus.cs.qc.edu/~waxman/211/" target="_blank">Waxman's Website</a></li>
@@ -76,16 +76,35 @@
 
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="../../CS111/CS111.html" >CS 111</a> 
-            <a href="../CS211.html">CS 211</a> 
-            <a href="../../Java/java.html">Java</a>
-            <a href="../../Data Structures/ds.html">Data Structure</a>
+            <a href="../../../CS111/" >CS 111</a> 
+            <a href="../../">CS 211</a> 
+            <a href="../../../Java/">Java</a>
+            <a href="../../../Data Structures/">Data Structure</a>
         </div>
 
         <div id="main">
 
             <section id="typedef">
-                
+                <h2>General</h2>
+                <p>
+                    <em>typedef</em> stands for <b>type def</b>inition. This keyword allows us to form an alias for a datatype.
+                    <br>A type alias is a different name we can use to identify a type. For example, my name is Jia but I have an alias of Alex as well, 
+                    both of which references the same person.
+                    <br>The syntax for using typedef is: <b><em><span style="color: #deecf8a9;">typedef</span></b> <span style="color: #9ee972;">existing_type new_type_name ;</span></em>
+                    <br><em>existing_type</em> is any type that already exisit either fundamental or compound.
+                    <br><em>new_type_name</em> is an new name that is given to the <em>existing_type</em> that will be used to identify it.
+                    <h4>Example:</h4>
+                    <img src="type1.jpg" alt="type1">
+                    <br><em>box</em> is now a datatype which refers to a 5 by 7 2D array of characters.
+                    <br><em>bb</em> and <em>wb</em> are both of type box which mean they are both char[5][7], a 5 x 7 2D array of characters.
+                    <br><em>board</em> is a 8 x 8 2D array of pointers to box types. Each cell of the board stores the address of some variable of type box.
+                    <br><br><b>NOTICE</b> typedef <b>DOES NOT</b> created new distinct data types, it merely create synonyms of existing types.
+                    <br><br><b>Related:</b>
+                    <ul>
+                        <li><a href="#">Fancy Queens</a></li>
+                        <li><a href="#">Integration</a></li>
+                    </ul>
+                </p>
             </section>
 
            

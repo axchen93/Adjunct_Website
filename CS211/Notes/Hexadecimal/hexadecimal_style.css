@@ -21,10 +21,6 @@ header{
     min-height: 70px;
     border-bottom:#ffffff 1px solid;
 }
-header a{
-    color: #ffffff;
-    text-decoration: none;
-}
 header #logo{
     text-align: center;
     margin-top: 30px;

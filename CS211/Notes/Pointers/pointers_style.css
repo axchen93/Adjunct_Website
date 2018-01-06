@@ -15,15 +15,11 @@ body{
 header{
     background-image: url('../img/pointer.jpg');
     background-position-y: -600px;
-    color: #ffffff;
+    color: #f76300;
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
     border-bottom:#ffffff 1px solid;
-}
-header a{
-    color: #ffffff;
-    text-decoration: none;
 }
 header #logo{
     text-align: center;
