@@ -13,9 +13,9 @@ body{
     overflow: hidden;
 }
 header{
-    background-image: url('../img/city3.jpg');
-    background-position-y: -300px;
-    color: #000000;
+    background-image: url('../img/city2.jpg');
+    background-position-y: -450px;
+    color: #fff;
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
@@ -30,6 +30,7 @@ header ul{
     padding:0;
     font-size: 25px;
     background: rgba(17, 17, 17,0.7);
+    border-radius: 20px;
     padding: 5px;
     color: #fff;
 }
@@ -188,8 +189,103 @@ header #logo{
     margin-left:50px;
 }
 
+#main a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
 #main{
-    transition:margin-left 0.5s;
+    background-color: #2b2a2a;
+    overflow: hidden;
+    border-bottom:#ffffff 1px solid;
+    padding: 0 300px;
+}
+
+.text{
+    background-color: rgba(0, 0, 0, 0.7);
+    display:inline-block;
+    padding:5px;
+    border-radius: 10px;
+
+}
+.img{
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.7;
+    height: 100px;
+}
+#array .img{
+    background-image: url('img/array.jpeg');
+    background-position-y: -500px;
+}
+
+#race .img{
+    background-image: url('img/race.jpeg');
+    background-position-y: -300px;
+}
+
+#two .img{
+    background-image: url('img/2dqueens.jpeg');
+    background-position-y: -200px;
+}
+
+#one .img{
+    background-image: url('img/1dqueens.jpeg');
+    background-position-y: -50px;
+}
+
+#eight .img{
+    background-image: url('img/eight.jpeg');
+    background-position-y: -400px;
+}
+
+#marraige .img{
+    background-image: url('img/marriage.jpg');
+    background-position-y: -400px;
+}
+#integ .img{
+    background-image: url('img/integral.jpg');
+    background-position-y: -400px;
+}
+
+#fancy .img{
+    background-image: url('img/fancy.jpeg');
+    background-position-y: -200px;
+}
+
+#nqueens .img{
+    background-image: url('img/nqueens.jpeg');
+    background-position-y: -200px;
+}
+
+#towers .img{
+    background-image: url('img/towers.jpeg');
+    background-position-y: -300px;
+}
+#path .img{
+    background-image: url('img/path.jpeg');
+    background-position-y: -600px;
+}
+
+#bishops .img{
+    background-image: url('img/bishops.jpeg');
+    background-position-y: -300px;
+}
+
+#rat .img{
+    background-image: url('img/rat.jpeg');
+    background-position-y: -100px;
+}
+
+.foot{
+    background: #35424a;
     overflow:hidden;
-    padding: 20px;
+    height:50px;
+    display: flex;
+    padding: 0 20px;
+    color: #fff;
+}
+.foot .name{
+    padding-right: 100px;
 }

@@ -13,18 +13,14 @@ body{
     overflow: hidden;
 }
 header{
-    background-image: url('../img/class.jpg');
+    background-image: url('../img/rat.jpeg');
     background-position-y: -200px;
-    color: #ffffff;
+    color: #3cb8ff;
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
     border-bottom:#ffffff 1px solid;
 
-}
-header a{
-    color: #ffffff;
-    text-decoration: none;
 }
 header #logo{
     text-align: center;
@@ -180,22 +176,8 @@ header #logo{
     border-bottom:#ffffff 1px solid;
     color:#fff;
     background-color: #2b2a2a;
-}
-.info{
-    padding: 0 100px;
-    font-size: 20px;
-    text-align: left;
-}
-
-#backtrack h3{
-    color: #28b9f3;
-}
-#backtrack li{
-    list-style: none;
-}
-#backtrack a{
-    text-decoration: none;
-    color: #ee4747;
+    padding: 0 300px;
+    min-height: 75vh;
 }
 
 .foot{

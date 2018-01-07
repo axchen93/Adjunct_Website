@@ -1,0 +1,136 @@
+<!DOCTYPE html><!--Dynamic-->
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "author" content ="Alex Chen">
+        <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
+        <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
+        <title>Alex Chen | Queens College CS </title>
+        <link rel="stylesheet" href="dynamic_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <h1>Dynamic Memory</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+            <ul class="navbar-nav">
+                <li><a href="../../../">Home</a></li>
+                <li><a href="../../">Course Info</a></li>
+                <div class="note-drop">
+                    <li><a href="../">Notes</a></li>
+                        <div class="note-slide">
+                            <li><a href="../Backtracking/">Backtracking</a></li>
+                            <li><a href="../Pointers/">Pointers</a></li>
+                            <li><a href="../Hexadecimal/">Hexadecimal</a></li>
+                            <li><a href="../Typedef/">Typedef</a></li>
+                            <li><a href="../Dynamic/">Dynamic Memory</a></li>
+                            <li><a href="../Memo/">Memoization</a></li>
+                            <li><a href="../Vectors/">Vectors</a></li>
+                            <li><a href="../Class/">Class</a></li>
+                        </div>
+                </div>
+                <div class="project-drop">
+                    <li><a href="../../Projects/">Projects</a></li>
+                        <div class="project-slide">
+                            <li><a href="../../Projects/Equi Array/">Equivalent Arrays</a></li>
+                            <li><a href="../../Projects/Race/">Score the Race</a></li>
+                            <li><a href="../../Projects/2D Queens/">2D 8Queens</a></li>
+                            <li><a href="../../Projects/1D Queens/">1D 8Queens</a></li>
+                            <li><a href="../../Projects/Eight Numbers/">Eight Numbers</a></li>
+                            <li><a href="../../Projects/Marriage/">Stable Marriage</a></li>
+                            <li><a href="../../Projects/Integration/">Integration</a></li>
+                            <li><a href="../../Projects/Fancy Queens/">Fancy Queens</a></li>
+                            <li><a href="../../Projects/nQueens/">nQueens</a></li>
+                            <li><a href="../../Projects/Towers/">Towers of Hanoi</a></li>
+                            <li><a href="../../Projects/Paths/">Shortest Path</a></li>
+                            <li><a href="../../Projects/kBishops/">kBishops</a></li>
+                            <li><a href="../../Projects/Rat/">Rat Class</a></li>
+                        </div>
+                </div>
+                <div class="review-drop">
+                    <li><a href="#">Review</a></li>
+                        <div class="review-slide">
+                            <li><a href="../../Resource/Sample Midterm Review.pdf" target="_blank">Midterm Review</a></li>
+                            <li><a href="../../Resource/Practice Problems for CS211 Final.pdf" target="_blank">Final Review</a></li>
+                        </div>
+                </div>
+                <li><a href="http://venus.cs.qc.edu/~waxman/211/" target="_blank">Waxman's Website</a></li>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="../../../CS111/" >CS 111</a> 
+            <a href="../../">CS 211</a> 
+            <a href="../../../Java/">Java</a>
+            <a href="../../../Data Structures/">Data Structure</a>
+        </div>
+
+        <div id="main">
+
+            <section id="dynamic">
+                <h3>General</h3>
+                <p>
+                    The memory needed for a program to run is determined when the program complies. The memory that is needed for the variables declared in a program is allocated before the program is executed.
+                    <br>But there may be cases where the memory cannot be determined until runtime. 
+                    <br>For example when the memory needed is dependent on user input. In such cases we need to dynamically allocate memory.
+                    <h3><em>new</em> and <em>new[]</em> operators</h3>
+                    Dynamic memory is allocated using the new operator. The syntax is:
+                    <br><span class = "code">pointer = new type</span>
+                    <br>This expression is used to allocate memory to contain one single element.
+                    <br><span class = "code">pointer = new type [number_of_numbers]</span>
+                    <br>This expression is used to allocate a block of elements or an array. <br>
+                    <br><img src="dynamic1.jpg" alt="">
+                    <br>In this example, the program dynamically allocates space for five integers and returns a pointer to the first element in the array. <em>foo</em>
+                    is a pointer that now points to a valid block of memory with space for five int elements. See <a href="../Pointers/">pointers</a> for more info.<br>
+                    <br>It returns a pointer to the beginning of the new block of memory allocated.
+                    <br>The dynamic memory requested by our program is allocated from the memory heap. However, memory is limited, and it can be exhausted. 
+                    <h3><em>delete</em> and <em>delete[]</em> operators</h3>
+                    One way to prevent memory from being wasted, memory leak, is to free memory up. In most cases, memory allocated dynamically is only needed for a specific period and can be freed up so that the memory becomes available for future use. This is done using the delete operator. The syntax for delete is:
+                    <br><span class = "code">delete pointer;</span>
+                    <br>This statement releases the memory of a single element allocated.
+                    <br><span class = "code">delete[] pointer;</span>
+                    <br>This statement releases the memory allocated for arrays.
+                </p>
+                <br><b>Related:</b>
+                    <ul>
+                        <li><a href="../../Projects/nQueens/">nQueens</a></li>
+                        <li><a href="../../Projects/kBishops/">kBishops</a></li>
+                        <li><a href="../Pointers/">Pointers</a></li>
+                    </ul>
+            </section>
+
+           
+        </div>
+
+        <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width='250px';
+            }
+
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width='0';
+            }
+        </script>
+    </body>
+    <footer class="foot">
+        <p class="name">Created by: Alex Chen</p>
+        <p class="contact">Contact information: axchen93@gmail.com</p>
+    </footer>
+</html>
