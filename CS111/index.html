@@ -25,36 +25,36 @@
                 <li><a href="../">Home</a></li>
                 <li><a href="">Course Info</a></li>
                 <div class="lec-drop">
-                    <li><a href="#" >Lectures</a></li>
+                    <li><a href="Lectures/" >Lectures</a></li>
                         <div class="lec-slide">
-                            <li><a href="#">Introduction</a></li>
-                            <li><a href="#">C++ Basic</a></li>
-                            <li><a href="#">Decisions</a></li>
-                            <li><a href="#">Printing Patterns</a></li>
-                            <li><a href="#">Functions</a></li>
-                            <li><a href="#">Function Headers</a></li>
-                            <li><a href="#">Recursion</a></li>
-                            <li><a href="#">Arrays</a></li>
-                            <li><a href="#">Strings</a></li>
-                            <li><a href="#">File IO</a></li>
+                            <li><a href="Lectures/Introduction/">Introduction</a></li>
+                            <li><a href="Lectures/Basics/">C++ Basic</a></li>
+                            <li><a href="Lectures/Decisions/">Decisions</a></li>
+                            <li><a href="Lectures/Patterns/">Printing Patterns</a></li>
+                            <li><a href="Lectures/Functions/">Functions</a></li>
+                            <li><a href="Lectures/Recursions/">Recursion</a></li>
+                            <li><a href="Lectures/Arrays/">Arrays</a></li>
+                            <li><a href="Lectures/Strings/">Strings</a></li>
+                            <li><a href="Lectures/IO/">File IO</a></li>
                         </div>
                 </div>
                 <div class="asign-drop">
-                    <li><a href="#">Assignments</a></li>
+                    <li><a href="Assignments/">Assignments</a></li>
                         <div class="asign-slide">
-                            <li><a href="#">Assignment#1</a></li>
-                            <li><a href="#">Assignment#2</a></li>
-                            <li><a href="#">Assignment#3</a></li>
-                            <li><a href="#">Assignment#4</a></li>
-                            <li><a href="#">Assignment#5</a></li>
-                            <li><a href="#">Assignment#6</a></li>
-                            <li><a href="#">Assignment#7</a></li>
+                            <li><a href="Assignments/Assignment1/">Assignment#1</a></li>
+                            <li><a href="Assignments/Assignment2/">Assignment#2</a></li>
+                            <li><a href="Assignments/Assignment3/">Assignment#3</a></li>
+                            <li><a href="Assignments/Assignment4/">Assignment#4</a></li>
+                            <li><a href="Assignments/Assignment5/">Assignment#5</a></li>
+                            <li><a href="Assignments/Assignment6/">Assignment#6</a></li>
+                            <li><a href="Assignments/Assignment7/">Assignment#7</a></li>
                         </div>
                 </div>
                 <div class="review-drop">
-                    <li><a href="#">Review</a></li>
+                    <li><a href="Review/">Review</a></li>
                         <div class="review-slide">
-                            <li><a href="#">Midterm Review</a></li>
+                            <li><a href="#">Midterm1 Review</a></li>
+                            <li><a href="#">Midterm2 Review</a></li>
                             <li><a href="#">Final Review</a></li>
                         </div>
                 </div>
@@ -63,7 +63,7 @@
         </nav>
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="../CS111/" >CS 111</a> 
+            <a href="">CS 111</a> 
             <a href="../CS211/">CS 211</a> 
             <a href="../Java/">Java</a>
             <a href="../Data Structures/">Data Structure</a>
@@ -109,18 +109,17 @@
             </div>
             <section class="section-2">
                     <ul>
-                        <li><a href="#">Introduction</a></li>
-                        <li><a href="#">Basics</a></li>
-                        <li><a href="#">Decisions</a></li>
-                        <li><a href="#">Printing Patterns</a></li>
-                        <li><a href="#">Functions</a></li>
+                        <li><a href="Lectures/Introduction/">Introduction</a></li>
+                        <li><a href="Lectures/Basics/">C++ Basic</a></li>
+                        <li><a href="Lectures/Decisions/">Decisions</a></li>
+                        <li><a href="Lectures/Patterns/">Printing Patterns</a></li>
+                        <li><a href="Lectures/Functions/">Functions</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Function Headers</a></li>
-                        <li><a href="#">Recursion</a></li>
-                        <li><a href="#">Arrays</a></li>
-                        <li><a href="#">Strings</a></li>
-                        <li><a href="#">File IO</a></li>
+                        <li><a href="Lectures/Recursions/">Recursion</a></li>
+                        <li><a href="Lectures/Arrays/">Arrays</a></li>
+                        <li><a href="Lectures/Strings/">Strings</a></li>
+                        <li><a href="Lectures/IO/">File IO</a></li>
                     </ul>
             </section>
             
@@ -134,25 +133,23 @@
             </div>
             <section class="section-3">
                     <ul>
-                        <li><a href="#">Assignment #1: Basic</a></li>
-                        <li><a href="#">Assignment #2: Decisions</a></li>
-                        <li><a href="#">Assignment #3: Patterns</a></li>
-                        <li><a href="#">Assignment #4: Functions</a></li>
-                        <li><a href="#">Assignment #5: Recursion</a></li>
-                        <li><a href="#">Assignment #6: Arrays</a></li>
-                        <li><a href="#">Assignment #7: Input/Output</a></li>
+                        <li><a href="Assignments/Assignment1/">Assignment#1</a></li>
+                        <li><a href="Assignments/Assignment2/">Assignment#2</a></li>
+                        <li><a href="Assignments/Assignment3/">Assignment#3</a></li>
+                        <li><a href="Assignments/Assignment4/">Assignment#4</a></li>
+                        <li><a href="Assignments/Assignment5/">Assignment#5</a></li>
+                        <li><a href="Assignments/Assignment6/">Assignment#6</a></li>
+                        <li><a href="Assignments/Assignment7/">Assignment#7</a></li>
                     </ul>
             </section>
 
         <script>
             function openSlideMenu(){
                 document.getElementById('side-menu').style.width='250px';
-                document.getElementById('main').style.marginLeft = '250px';
             }
 
             function closeSlideMenu(){
                 document.getElementById('side-menu').style.width='0';
-                document.getElementById('main').style.marginLeft = '0';
             }
         </script>
     </body>
