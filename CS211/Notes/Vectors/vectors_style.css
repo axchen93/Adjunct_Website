@@ -176,8 +176,19 @@ header #logo{
     color:#fff;
     background-color: #2b2a2a;
     min-height: 75vh;
+    padding: 0 300px;
+    font-size: 20px;
 }
-
+#main h3{
+    color:#28b9f3;
+}
+#main a{
+    text-decoration: none;
+    color: #ee4747;
+}
+#main ul{
+    list-style: none;
+}
 .foot{
     background: #35424a;
     overflow:hidden;

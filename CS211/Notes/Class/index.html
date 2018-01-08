@@ -83,12 +83,40 @@
         </div>
 
         <div id="main">
+            <h3>Data Types</h3>
+            <p>
+                The following are primative data types:
+                <br><img src="class1.jpg" alt="class1">
+                <br>These data types are built-in data types and can be used directly by the user to declare variables. But 
+                sometimes we need more than just simple data types, in such time we use classes.
+            </p>
+            <h3>Classes</h3>
+            <p>
+                A <b>class</b> is a data type that contain different parts, these parts are known as members. There are two types of members, data
+                and function members. These members are only associated with the class. An object is an instance of a class. 
+                You have already been exposed to a class already: <em>strings</em>.
+                <br><img src="class2.jpg" alt="class2">
+                <br><em>s1</em> and <em>s2</em> are string objects. the <em>.size()</em> and <em>.substr()</em> are member functions of the string class.
+            </p>
+            <h3>Class Layout</h3>
+            <p>
+                <img src="class3.jpg" alt="class3">
+                <br><span class="code">private</span>:
+                <br>This area is for the private variables and functions. These members can only be access from within the class.
+                <br><span class="code">public</span>:
+                <br>This area is for the public variables and functions. These members can be access from anywhere as long as an instance of the class exist.
+            </p>
+            <h3>Constructor/Destructor</h3>
+            <p>
+                A constructor is a function that gets called when a object needs to be created. The purpose of the constructor is to initialize the data members.
+                <br>A constructor is declared with the same name as the class, and with no return type.
+                <br>
+                <br>Destructors are called automatically when an object is deleted. This happens when the object goes out of scope. 
+                If you don't define a destructor, the compiler will create one for you, which deletes each data member. You should use a destructor to delete 
+                anything that you declared dynamically, to avoid a memory leak.
+            </p>
 
-            <section id="class">
-                
-            </section>
-
-           
+            Go to: <a href="../../Projects/Rat/">RAT Class</a> for more information on classes and specfics on RAT class.
         </div>
 
         <script>

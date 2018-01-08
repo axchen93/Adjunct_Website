@@ -223,36 +223,36 @@ header h1{
 }
 
 #assignment1 .img{
-    background-image: url('img/img1.jpeg');
+    background-image: url('img/img0.jpg');
+    background-position-y: center;
 }
 
 #assignment2 .img{
+    background-image: url('img/img1.jpeg');
+}
+
+#assignment3 .img{
     background-image: url('img/img2.jpeg');
     background-position-y: -200px;
 }
 
-#assignment3 .img{
-    background-image: url('img/img3.jpeg');
-    background-position-y: -250px;
-}
-
 #assignment4 .img{
-    background-image: url('img/img4.jpeg');
-    background-position-y: -500px;
+    background-image: url('img/img3.jpeg');
+    background-position-y: -200px;
 }
 
 #assignment5 .img{
-    background-image: url('img/img5.jpeg');
+    background-image: url('img/img4.jpeg');
     background-position-y: -200px;
 }
 
 #assignment6 .img{
-    background-image: url('img/img6.jpeg');
-    background-position-y: -250px;
+    background-image: url('img/img5.jpeg');
+    background-position-y: -200px;
 }
 
 #assignment7 .img{
-    background-image: url('img/img7.jpg');
+    background-image: url('img/img6.jpeg');
     background-position-y: -200px;
 }
 

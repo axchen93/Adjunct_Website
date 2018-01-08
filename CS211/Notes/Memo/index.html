@@ -83,12 +83,42 @@
         </div>
 
         <div id="main">
-
-            <section id="memo">
-                
-            </section>
-
-           
+            <h3>General</h3>
+            <p>
+                Memoization is a technique that reduces computation time by storing previously computed answers.
+                <br>Each time you call a function to compute an answer, if that answer has aready been computed before, simply 
+                return the answer. Otherwise compute it recursively and store the answer before returing the answer. By storing the
+                answer you keep track of what has been computed already and therefore no need to compute again. With memoization, the 
+                function is only called once for each value, the run time is then linear time and not exponential time.
+            </p>
+            <h3>Fibonacci sequences</h3>
+            <p>
+                1, 1, 2, 3, 5, 8, 13, 21, 34, 55...
+                <br>The sequence begins with 1, 1 and each <em>n</em>th Fibonacci number is the sum of the previous two Fibonacci numbers.
+                <br>Heres a basic C++ function for Fibonacci numbers:<br>
+                <div class="fib1"><br><img src="fib1.jpg" alt="fib1"></div>
+                <br>This function gives the correct answers but it extremely inefficent. This is how the recursion tree looks like:
+                <div class="fib3"><br><img src="fib3.png" alt="fib3" height="300"></div>
+                <br>From the tree you can see that this program will recaluate some Fibonacci numbers mutliple times. For example, f(1) is calculated 8 times.
+                These repeated calucations causes the program to make an exponential amount of recursive calls.
+            </p>
+            <h3>Solution-Memoization</h3>
+            <p>
+                <div class="fib2"><img src="fib2.jpg" alt="fib2"></div>
+                <ol>
+                    <li>Declare a static array of integers of size 100 and initized to 0.</li>
+                    <li>Check if <em>memo[n]</em> is 0, if it is <b>NOT</b> 0 then just simply return the value stored there.</li>
+                    <li>Otherwise, recursively call to calculate it, store it, and return the value.</li>
+                </ol>
+                The base case is if it is checking f(1) or f(2) then return 1.
+                <h4>Data Representation</h4>
+                <p>Use an array to store the Fibonacci numbers that have been calucated. However, this array is only in the scope of the function. Normally
+                    variables that only lives in the funcation, disappear after the end of the function call. To solve this, we use the keyword , <em>static</em>.
+                    <em>static</em> keeps the variable "alive" for the duration of the program even after the function call ends. <em>memo</em> will <b>not</b> be
+                    re-declared and reinitialized upon a subsequent call to the fib function.
+                </p>
+            </p>
+            Related: <a href="../../Projects/Paths/">Shortest Paths</a>
         </div>
 
         <script>

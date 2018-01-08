@@ -15,11 +15,11 @@ body{
 header{
     background-image: url('../img/dynamic.jpg');
     background-position-y: -300px;
-    color: #ffffff;
+    color: rgb(44, 44, 44);
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
-    border-bottom:#ffffff 1px solid;
+    border-bottom:#000000 1px solid;
 }
 header #logo{
     text-align: center;

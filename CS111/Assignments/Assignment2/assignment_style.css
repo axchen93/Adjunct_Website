@@ -13,8 +13,8 @@ body{
     overflow: hidden;
 }
 header{
-    background-image: url('../img/img2.jpeg');
-    background-position-y: -350px;
+    background-image: url('../img/img1.jpeg');
+    background-position-y: -550px;
     color: #ffffff;
     padding-top: 0;
     min-width: 70px;
