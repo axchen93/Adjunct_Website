@@ -1,12 +1,8 @@
 #include <iostream>
 using namespace std;
 
-// You may use an additional helper function if you want
 
-bool equivalent(int a[], int b[], int n) {
-   // Fill in.
-   // This function should not modify the original arrays (this is just a recommendation but not required for full credit).
-}
+bool equivalent() {}
 
 int main() {
    cout << boolalpha; // to print bool values as true/false instead of 1/0
@@ -33,3 +29,13 @@ int main() {
    
    return 0;
 }
+
+
+
+
+
+
+
+
+
+
