@@ -83,10 +83,66 @@
         </div>
 
         <div id="main">
+            <h3>General</h3>
+            <p>
+                The purpose of this program is to solve the 8 Queens problem; place 8 Queens on a 8 x 8 Chessboard such that no two queens threathen each other. 
+                No two queens may be in the same row, column, or diagonal. This problem has 92 different configurations or solutions. This will be solved by
+                implementing a <a href="../../Notes/Backtracking/" target="_blank">backtracking algorithm</a>.
+            </p>
 
+            <h3>Board Setup</h3>
+            <img src="img1.jpg" alt="">
+            <br>2D Array: q[r][c] represents row r, column c. 1 is a queen and 0 is an empty square.
+            <br><img src="chess1.png" alt="" height="300px" width="300px">
+            <h3>Column Section</h3>
+            <img src="img2.jpg" alt="">
+            <p>
+                What does top mean and last column mean?
+                <br><img src="chess2.jpg" alt="" height="300px" width="300px">
+            </p>
+            <h3>Row Section</h3>
+            <img src="img3.jpg" alt="">
+            <br>The Row Section can be broken down into 5 sections: Advance Row, Row Test, Up-Diagonal Test, Down-Diagonal Test, and Setting.
+            <p>
+                <b>Advance Row</b>
+                <br>The first part of the row section is to check is you went past the last row.
+                <br><img src="chess3.jpg" alt="" height="300px" width="300px">
+                <br><b>Row Test</b>
+                <br>Checks  if there is a queen on the same row. The for loop should check up to, but not including, the current column.
+                If so, move to the next row.
+                <br><img src="chess4.jpg" >
+                <br><b>Up-Diagonal Test</b>
+                <br>Checks if there is an conflict on the up-diagonal. Start looking from one position back. If there is an conflict, move to the next row.
+                <br><img src="chess5.jpg" >
+                <br><b>Down-Diagonal Test</b>
+                <br>Checks if there is an conflict on the down-diagonal. Start looking from one column back and at least one column foward. 
+                If there is an conflict, move to the next row.
+                <br><img src="chess6.jpg" >
+                <br><b>Setting</b>
+                <br>The final part, after is passes all the tests and found no conflicts, place a queen in that square and goes to the next column.
+            </p>
+            <h3>Backtrack Section</h3>
+            <p>
+                <img src="img4.jpg" alt="">
+                <br>Backtracking is simply; just back one column.
+                <br>But you need to make sure you dont backtrack too far, as to go off the board. In the event that you do backtrack all the past the board, terminate the program.
+                <br>Start looking from the first row of that column. Look through the rows of this column in the q array. When the queen has been found, remove the queen from that square
+                and set it to the next row by going to the next row section.
+            </p>
+            <h3>Print Section</h3>
+            <img src="img5.jpg" alt="">
+            <p>
+                This section purpose is to print a completed configuration, solution, to the 8 Queens problem.
+                <br><br><a href="8queens2d-output.txt">Here are the output</a>
+            </p>
+            <b><a href="template-8queens2d-goto.cpp">Use the follwing Template</a></b>
             
-
-           
+            <h3>GoTo</h3>
+            <p>
+                <em>goto</em> allows you to jump to another point in the code specified by a label (within the same funcation). A label is followed
+                by a colon.
+            </p>
+            <br>This project is to be submitted on blackboard.
         </div>
 
         <script>

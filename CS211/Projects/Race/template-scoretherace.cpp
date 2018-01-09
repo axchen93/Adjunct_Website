@@ -1,16 +1,16 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main() {
    while (true) {
-      string outcome;
+      string runners;
       cout << "Enter the race outcome: ";
-      cin >> outcome;
+      cin >> runners;
       // If the user entered "done", exit the program
       int numTeams = 0;       // The number of teams
-      int scores['Z'+1] = {}; // scores[i] keeps track of the total score of team i
-      int counts['Z'+1] = {}; // counts[i] keeps track of the number of runners on team i
-      for (int i = 0; i < outcome.length(); ++i) { // For each runner in the race,
+      int scores[26] = {}; // scores[i] keeps track of the total score of team i
+      int counts[26] = {}; // counts[i] keeps track of the number of runners on team i
+      for (int i = 0; i < runners.length(); ++i) { // For each runner in the race,
          // Increase the team's score by the runner's rank (the rank is 1 more than the index)
          // If it's the first runner of that particular team, update the total number of teams
          // Update the number of runners on the team
