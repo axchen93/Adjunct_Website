@@ -1,159 +1,156 @@
-body{
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    padding :0;
+:root{
+    --containerBgColor: #2b2a2a;
+    --leftBgColor: rgba(43,43,43,0.8);
+    --rightBgColor: rgba(121, 151, 160, 0.8);
+    --buttonHoverColor: rgba(103, 200, 248, 0.7);
+    --buttonColor:rgba(43, 42, 42,0.7);
+    --hoverWidth: 75%;
+    --otherWidth: 25%;
+    --speed: 1000ms;
+}
+html, body{
+    padding: 0;
     margin: 0;
-    background-color: #deecf8a9;
-    list-style: none;
+    font-family: 'Lato' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 50px;
+    position: absolute;
+    line-height: 1.3;
+    white-space:nowrap;
+    animation-name: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: translateX(-50%);
+    left: 50%;
+}
+@keyframes heading{
+    0%{top:-50%;}
+    100%{top:20%;}
 }
 .container{
-    width: 90%;
-    margin: auto;
+    padding: 0 300px;
+    color: #fff;
+    width:100%;
+    height:100%;
+    background: var(--containerBgColor);
+}
+.content{
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+}
+.left_content{
+    animation-name: contentLeft;
+    transform: translateX(-50%);
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes contentLeft{
+    0%{ left:-100%;}
+    100%{left:50%;}
+}
+.right_content{
+    animation-name: contentRight;
+    transform: translateX(50%);
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes contentRight{
+    0%{ right:-100%;}
+    100%{right:50%;}
+}
+.btn{
+    background: var(--buttonColor);
+    display:inline-block;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    border: #fff 1px solid;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    position: absolute;
+    animation: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.btn:hover{
+    background: var(--buttonHoverColor);
+}
+.split{
+    position: absolute;
+    width: 50%;
+    height:100%;
     overflow: hidden;
 }
-.navbar{
-    background-color: #35424a;
-    overflow:hidden;
-    height:60px;
-
-}
-.navbar a{
-    float:left;
-    display:block;
-    color: #ffffff;
-    text-align: center;
-    padding:15px 30px;
-    text-decoration: none;
-    font-size:20px;
-}
-
-.navbar ul{
-    margin:0;
-    list-style: none;
-}
-
-.navbar a:hover{
-    background-color:#dddddd;
-    font-weight: bold;
-    color: #28b9f3;
-}
-.side-nav{
-    height:100%;
-    width:0;
-    position:fixed;
-    z-index:1;
-    top:0;
+.split.left{
+    background:url('img/london.jpeg') center center no-repeat;
     left:0;
-    background-color: #111111;
-    opacity: 0.9;
-    overflow-x:hidden;
-    padding-top:60px;
-    transition: 0.5s;
+    transition: var(--speed) all ease-in-out;
 }
-
-.side-nav a{
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ccc;
-    display: block;
-    line-height: 50px;
+.split.right{
+    background: url('img/nyc.jpeg') center center no-repeat;
+    right:0;
+    transition: var(--speed) all ease-in-out;
 }
-
-.side-nav a:hover{
-    color: #fff;
-}
-
-.side-nav .btn-close{
+.split.left:before{
     position: absolute;
-    top:0;
-    right:22px;
-    font-size: 40px;
-    margin-left:50px;
+    content:"";
+    width:100%;
+    height:100%;
+    background: var(--leftBgColor);
+    transition: var(--speed) all ease-in-out;
 }
-.info{
-    background: #35424a;
-    border-radius: 20px;
-    opacity: 0.8;
-    color: #fff;
-    display: flex;
-    padding: 20px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.split.right:before{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background: var(--rightBgColor);
+    transition: var(--speed) all ease-in-out;
 }
-#showcase{
-    transition:margin-left 0.5s;
-    overflow:hidden;
-    padding: 20px;
-    background-image: url('img/qc.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hoverLeft .left{
+    width: var(--hoverWidth);
 }
-#showcase h1{
-    font-size: 50px;
+.hoverLeft .right{
+    width: var(--otherWidth);
 }
-
-#showcase li{
-    list-style: none;
-    padding: 0;
-    font-size: 30px;
+.hoverLeft .left:before{
+    background: none;
 }
-#section-1{
-    padding:20px 50px;
-    text-align: center;
-    font-size: 20px;
-    
+.hoverLeft .right:before{
+    z-index:2;
 }
-#section-1 a{
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 20px;
-    color: #28b9f3;
-    
+.hoverRight .right{
+    width: var(--hoverWidth);
 }
-#section-2{
-    padding:20px 50px;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    background-color: #35424a;
+.hoverRight .left{
+    width: var(--otherWidth);
 }
-#section-2 a{
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 20px;
-    color: #28b9f3;
+.hoverRight .right:before{
+    background: none;
 }
-#section-3{
-    display: flex;
-    text-align: center;
-    font-size: 20px;
+.hoverRight .left:before{
+    z-index:2;
 }
-#section-3 div{
-    padding:20px 50px;
-}
-#section-3 a{
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 20px;
-    color: #28b9f3;
-}
-.foot{
-    background: #35424a;
-    overflow:hidden;
-    height:50px;
-    display: flex;
-    padding: 0 20px;
-    color: #fff;
-}
-.foot .name{
-    padding-right: 100px;
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
+    .content{
+        font-size: 1.5rem;
+    }
+    .button{
+        width:12rem;
+    }
 }

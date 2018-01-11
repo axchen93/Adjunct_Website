@@ -1,110 +1,33 @@
-<!DOCTYPE html><!--Main homepage-->
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset ="utf-8">
-        <meta name = "viewport" content = "width=device-width">
-        <meta name = "author" content ="Alex Chen">
-        <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
-        <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
-        <title>Alex Chen | Queens College CS </title>
-        <link rel="stylesheet" href="index_style.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <span class="open-slide">
-                    <a href="#" onclick="openSlideMenu()">
-                        <svg width="30" height="30">
-                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-                        </svg>
-                    </a>
-                </span>
-                <ul class="navbar-nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="CS111/">CS111</a></li>
-                    <li><a href="CS211/">CS211</a></li>
-                    <li><a href="Java/">Java</a></li>
-                    <li><a href="Data Structures/">Data Structure</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="CS111/" >CS 111</a> 
-            <a href="CS211/">CS 211</a> 
-            <a href="Java/">Java</a>
-            <a href="Data Structures/">Data Structure</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content ="Alex Chen">
+    <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
+    <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Alex Chen | Queens College CS </title>
+</head>
+<body>
+    <div class="container">
+        <div class="split left">
+            <h1>CS 111</h1>
+            <div class="left_content content">
+                Introduction to C++
+            </div>
+            <a href="CS111/" class="btn">Go To Course</a>
         </div>
-        <section id="showcase">
-            <div class="info">
-            <h1>Queens College Computer Science</h1>
-                    <ul>
-                        <li>Alex Chen (Jia)</li>
-                        <li>Adjunct Lecturer</li>
-                        <li>Email:axchen93@gmail.com</li>
-                        <li>Room:SB A201</li>
-                        <li>Office Hours: By appointment</li>
-                    </ul>
+        <div class="split right">
+            <h1>CS 211</h1>
+            <div class="right_content content">
+                Intermediate C++
             </div>
-        </section>
-        <section id="section-1">
-            <h1>Computer Science 111 </h1>
-            <h2>Introduction to C++</h2>
-            <a href="CS111/" >CS 111</a> 
-            <p>CS111(Introduction to Algorithmic Problem- Solving): Introductory course for computer science department. Learn the principles and practice of programming using C++.
-                Topics include primitive data types; control structures; arrays; procedures and functions; parameter passing; scope and lifetime of variables; input and output; documentation. 
-            </p>
-
-        </section>
-        <section id="section-2">
-            <h1>Computer Science 211 </h1>
-            <h2>Intermediate C++</h2>
-            <a href="CS211/" >CS 211</a> 
-            <p>CS211(Object-Oriented Programming in C++): Intermediate programming with C++. Object-oriented algorithmic problem solving in C++, with attention to 
-                general as well as language-specific issues including pointer and pointer arithmetic; linked lists; memory management; recursion; operator overloading;emplates and STL; 
-                applications of simple data structures; testing and debugging techniques. 
-            </p>
-        </section>
-        <section id="section-3">
-            <div class="java">
-                <h1>Java Language</h1>
-                <h2>Object Oriented Programming in Java</h2>
-                <a href="Java/" >Java</a> 
-                <p>Object-oriented algorithmic problem solving in Java. Learn the principles and practice of programming using java. event-driven programming; 
-                    elements of graphical user interfaces (GUIs); recursion; inheritance and polymorphism; file I/O; exception handling; packages; applications of simple 
-                    data structures;concept of multithreading. 
-                </p>
-            </div>
-            <div class="ds">
-                <h1>Data Structures </h1>
-                <h2>Data Structures in Java</h2>
-                <a href="Data Structures/" >DS</a> 
-                <p>Fundamental data structures and their implementations: list, stacks, queues, trees (binary and AVL), heaps, hash tables. Searching and sorting algorithms. 
-                    Runtime analysis. 
-                </p>
-            </div>
-        </section>
-        <script>
-            function openSlideMenu(){
-                document.getElementById('side-menu').style.width='250px';
-                document.getElementById('showcase').style.marginLeft = '250px';
-            }
-
-            function closeSlideMenu(){
-                document.getElementById('side-menu').style.width='0';
-                document.getElementById('showcase').style.marginLeft = '0';
-            }
-        </script>
-    </body>
-    <footer class="foot">
-        <p class="name">Created by: Alex Chen</p>
-        <p class="contact">Contact information: axchen93@gmail.com</p>
-    </footer>
-
-
-
-
+            <a href="CS211/" class="btn">Go To Course</a>
+        </div>
+    </div>
+    <script src="main.js"></script>    
+</body>
 </html>
