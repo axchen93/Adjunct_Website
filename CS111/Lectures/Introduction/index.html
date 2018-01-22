@@ -76,9 +76,134 @@
             <a href="../../../Data Structures" class="btn-ds">Data Structure</a>
         </div>
         <section id="main">
-        
-            
-
+            <h3>Algorithmic Problem Solving with C++</h3>
+            <p>Algorithmic Problem Solving with C++
+                Our goal in this course is to train ourselves to become better problem solvers by employing “algorithms”. As a tool to solve these problems, we’ll learn parts of C++.
+            </p>
+            <h3>What is C++? </h3>
+            <p>
+                C++ is a programming language that allows us humans to tell a computer what to do. As far we know, a computer cannot figure out what they are supposed to do on their own. Thus, we need to tell it what to do in forms of “programs” which we create using programming languages. Each programming language has its own rules that you must follow precisely or the program will not work.
+            </p>
+            <h3>How does programming work?</h3>
+            <p>
+                You write the source code using C++. The source code is nothing more than plain, readable text that you can write/edit with any text editor. That source code is then translated by a complier and complies your code into code that the machine can understand known as machine code, bunch of 0s and 1s. Your computer reads and executes the machine code.
+            </p>
+            <h3>Venus</h3>
+            <p>
+                Venus is the CS department’s server, which runs the Unix operating system. On Venus you will be able to compile and run your programs.
+            </p>
+            <h3>Logging In</h3>
+            <p>
+                <h4>Computers in the computer labs:</h4>
+                <p>
+                    Username – First 2 letters of your last name, followed by first 2 letters of first name, and followed by the last 4 digits of your CUNY first ID (all lowercase)
+                    <br>Password – 8 digits of CUNY first ID
+                    <br>For example: Student name is Alex Chen and CUNYfirst ID is 12345678. Login Username is chal5678 and Password is 123345678
+                </p>
+                <h4>Venus Server</h4>
+                <p>
+                    Host name: venus.cs.qc.cuny.edu
+                </p>
+            </p>   
+            <h3>Connecting to Venus (Windows):</h3>
+            <p>
+                Download and install <a href="sshsecureshellclient-3.2.9.exe">SSH</a> and then run the program. If you're on the school computer, no need to install SSH, its on the desktop. Open the program. Click on Profiles -> Add Profile. 
+                <img src="ssh1.png" alt="ssh1">
+            </p>
+            <p>
+                Type in whatever profile name you like and click Add to Profiles.
+                <br><img src="ssh2.png" alt="ssh2">
+            </p>
+            <p>
+                Click Profiles -> Edit Profiles. Fill in the Host name and User name and click OK (See login information above)
+                <br><img src="ssh3.png" alt="ssh3">
+            </p>
+            <p>
+                Click Profiles -> [whatever you named your profile]. Type your password (see login information above) and click OK.
+                <br><img src="ssh4.png" alt="ssh4">
+            </p>
+            <h4>Transferring Files</h4>
+            <p>
+                After logging in, click the New File Transfer button
+                <br><img src="ssh5.png" alt="ssh5">
+            </p>
+            <p>
+                The left side shows files on your computer. The right side shows files on Venus You can drag and drop to upload/download files. You can also drag and drop from the SSH window to either your desktop or Windows Explorer.
+                <br><img src="ssh6.png" alt="ssh6">
+            </p>
+            <h3>Mac Users</h3>
+            <p>
+                You can compile and run your source code locally on your machine without logging into Venus. Access to your file is straight forward and you can submit whatever files that you have created locally with ease.
+                <ol>
+                    <li>
+                        Go to Applications/Utilities folder. There you will find Terminal, open it.
+                        <br><img src="mac1.png" alt="mac1">
+                    </li>
+                    <li>
+                        Once in terminal, you can use any Unix command. See below.
+                        <br><img src="mac2.png" alt="mac2">
+                    </li>
+                    <li>
+                        If this is the first time you are using your Terminal, chances are you haven't installed Command Line Developer Tools yet. There will be a pop up like this below
+                        <br><img src="mac3.png" alt="mac3">
+                    </li>
+                    <li>
+                        Click on Install. There is no need to get Xcode.
+                    </li>
+                    <li>
+                        You are ready to create and compile your C++ source code using the same Unix commands that you used in class.
+                    </li>
+                </ol>
+            </p>
+            <h4>Login onto Venus on Mac</h4>
+            <p>
+                Use the command ssh to login into 
+                <br><em>ssh your_username@venus.cs.qc.cuny.edu</em>
+                <br><img src="mac4.png" alt="mac4">
+                <br>It will prompt you for your password. NOTICE when you type your password, nothing shows. That normal your computer did not freeze. Enter your password and hit enter. This screen should display.
+                <br><img src="mac5.png" alt="mac5">
+            </p>
+            <h3>Unix Commands</h3>
+            <p>
+                Below are some common Unix commands. 
+                <table>
+                    <thead>
+                        <td>Files and Navigation</td>
+                    </thead>
+                    <tr>
+                        <td>cd [folderName]</td>
+                        <td>Change the current directory</td>
+                    </tr>
+                    <tr>
+                        <td>cd .. </td>
+                        <td>Go to parent directory</td>
+                    </tr>
+                    <tr>
+                        <td>ls</td>
+                        <td>List the files in the current directory</td>
+                    </tr>
+                    <tr>
+                        <td>mkdir [folderName] </td>
+                        <td>Create a new folder</td>
+                    </tr>
+                    <tr>
+                        <td>pwd [fileName] </td>
+                        <td>Print the path of the current directory</td>
+                    </tr>
+                    <tr>
+                        <td>rm [fileName]  </td>
+                        <td>Delete a file</td>
+                    </tr>
+                     <tr>
+                        <td>rmdir [folderName]</td>
+                        <td>Delete an empty folder</td>
+                    </tr>
+                    <tr>
+                        <td>up key</td>
+                        <td>Previous command (press up multiple times to see your command history)</td>
+                    </tr>
+                </table>
+            </p>
         </section>
         <script>
             function openSlideMenu(){

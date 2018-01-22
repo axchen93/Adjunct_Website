@@ -177,6 +177,18 @@ header #logo{
     border-bottom:#ffffff 1px solid;
     padding: 0 300px;
     min-height: 75vh;
+    font-size: 20px;
+}
+#main h3{
+    color: #28b9f3;
+}
+#main a{
+    color: #ee4747;
+    text-decoration: none;
+}
+img {
+    height: auto;
+    max-width: 100%;
 }
 .foot{
     background: #35424a;
@@ -189,4 +201,19 @@ header #logo{
 }
 .foot .name{
     padding-right: 100px;
+}
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
+    #main{
+        font-size: 1rem; 
+        padding:0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .foot{
+        font-size: .75rem;
+    }
 }
