@@ -83,10 +83,47 @@
         </div>
 
         <div id="main">
+            <h3>Purpose</h3>
+            <p>
+                The goal is to move all of the disk from one tower to another tower, with the following rules:
+                <ul>
+                    <li>Move one disk at a time</li>
+                    <li>Only move from the top of the tower to the top of another tower</li>
+                    <li>Never place a larger disk on a smaller disk</li>
+                </ul>
+                This project will be using <a href="../../Notes/Vectors/" target="_blank">vectors</a>. This project must work for both even and odd numbers of disk. One way of doing this is either using an if else condition or have two separate functions, one for even rings and other for odd.
+            </p>
+            <h3>Data Representation</h3>
+            <p>
+                Use an array of integer vectors, each vector is representing one of the towers, and the last element in the vector is the top of the tower.
+                <br>The numbers in the vectors represent the disks. The larger the number the larger the disk. The number on the bottom of the vector or tower is NOT representing any disks; that number is there as a padding so when we call the back function on an “empty” tower it will not crash the program.
+                <br>This program will use 4 variables:
+                <ul>
+                    <li>n: the number of disks to move </li>
+                    <li>from: the tower from which the disk is going to be moved from (initialize to 0)</li>
+                    <li>to: the destination tower of the disk being moved (initialize to 1 for odd n or 2 for even n)</li>
+                    <li>candidate: the number of the disc being moved (initialize to 1)</li>
+                </ul>
+            </p>
+            <h3>Algorithm</h3>
+            <p>
+                <h4>Move the disk on the top of the from tower to the top of the to tower</h4>
+                <h4 class="p2">Calculate the new "<em>from</em>", "<em>to</em>", and "<em>candidate</em>" for the next move:</h4>
+                <p  class="p2">
+                    <em>from</em>
+                    <br>Compare the disk from the top of the two towers that is not the "<em>to</em>" tower using  (to+1)%3 or (to+2)%3. These two disks are the disks that have not just been moved. Check which one is smaller and the tower with the smaller disk is the new "<em>from</em>" tower.
+                    <br><em>candidate</em>
+                    <br>The disc on top of the "<em>from</em>" tower
+                    <br><em>to</em>
+                    <br>The new "<em>to</em>" tower is the closest tower on which the candidate can be placed. If the number of disks is odd, the closest tower is (from+1)%3. Or (from+2)%3 (left) if the number of disks is even
+                </p>
+                <h4>Rinse and Repeat until the second tower or t[1] contains all of the disks </h4>
+            </p>
+            <h3>Resource</h3>
+            <a href="template-hanoi.cpp"target="_blank">Template</a>
+            <br><a href="hanoi-output.txt"target="_blank">Output</a>
+            <br><br>This project must be submitted on blackboard.
 
-            
-
-           
         </div>
 
         <script>
