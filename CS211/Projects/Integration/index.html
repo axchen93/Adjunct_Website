@@ -81,9 +81,20 @@
         </div>
 
         <div id="main">
-
-            
-
+            <h3>Purpose</h3>
+            <p>
+                The goal of this project is to find the area of a function between two points. The program uses <a href="../../Notes/Typedef/" target="_blank">typedef</a> to create an alias for a function. By doing so, we can pass a function as a parameter for another function call.
+                <br><img src="img1.jpg" alt="typedef">
+            </p>
+            <h3>Integration Function</h3>
+            <p>
+                This function returns the area under the curve between x=a and x=b. This function has 3 parameters that are passed in: the first parameter function for the specific shape of the curve and the second and third parameter is the points between the curve to find the area. 
+                Use a Riemann sum to estimate the area by dividing it into narrow rectangles, with each rectangle having a width of .0001. By adding up all the rectangles between point a and b will give an approximation of the area under the curve, the smaller the triangles, the better the approximation. 
+                <br>The width of each rectangle is given at .0001, but what about the height? The height will be the f(x) at the point. To obtain f(x), the function should call the function that passed in as the first parameter. 
+            </p>
+            <b>Resource</b>
+            <br><a href="template-integration.cpp" target="_blank">Template</a>
+            <br>This assignment must be submitted on blackboard.
            
         </div>
 

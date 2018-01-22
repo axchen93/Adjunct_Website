@@ -210,7 +210,8 @@ body{
     color: #fff;
 }
 
-.section-1 li{
+.section-1a ul{
+    padding: 0;
     list-style: none;
 }
 
@@ -231,8 +232,7 @@ body{
 }
 
 .section-1a{
-    padding:20px;
-    padding: 0 100px;
+    margin: 0;
     display: flex; 
     line-height: 30px;
     justify-content: space-between;
@@ -287,8 +287,23 @@ body{
 .foot .name{
     padding-right: 100px;
 }
+
 @media(max-width:800px){
-    h1{
-        font-size: 2rem;
+    .img1{
+        height: 50vh;
+    }
+    .text1{
+        padding-top: 40%;
+        font-size:1.5em;
+    }
+    .section-1, .section-2, .section-3{
+        padding: 5px;
+        margin: 0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .foot{
+        font-size: .75rem;
     }
 }

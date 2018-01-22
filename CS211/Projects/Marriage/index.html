@@ -83,10 +83,43 @@
         </div>
 
         <div id="main">
+            <h3>Purpose</h3>
+            <p>
+                The goal of this project to match n men and n women with their preference rankings of each other and give a "stable" set of marriages. This project uses <a href="../../Notes/Backtracking/" target="_blank">backtracking</a> to find its solutions.
+            </p>
+            <h3>What is a "Stable" matching</h3>
+            <p>
+                A matching is stable if there are no “instabilities.” Say the match assigns m1 to w1 and m2 to w2. An instability is the situation where there is a mutual greater preference for the other person’s partner than for one’s own. For example m1 would prefer w2 to w1 and likewise w2 prefers m1 to m2.
+            </p>
 
-            
+            <h3>Test Function</h3>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Check if women has already been married: <em>q[ col ] == q[ i ]</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Check how much any other man likes the women that has just been married (women c) and compares that to how much he likes his own wife. If he likes women c more than his own wife. That is an issue. <em>mp[ i ][ q[col] ] < mp[ i ][ q[i] ]</em>
+                            <br>
+                            Now check how much women c likes the other men and compare that to how much they like her own husband. If women c likes the other man more than her own husband. That’s an unstable marriable. <em>wp[ q[col] ][ i ] < wp[ q[col] ][ col ]</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Check how much the current man married (Man c) likes other women and compare it to how much he likes his current wife. <em>mp[ col ][ q[i] ] < mp[ col ][ q[col] ]</em> <br>
+                            Now check how much other women like man c and compare it to how much each women likes their own husband. If they like man c more then we have an unstable marriage.<em>wp[ q[i] ][ col ] < wp[ q[i] ][ i ]</em>
+                        </p>
+                    </li>
+                </ol>
+            </p>
 
-           
+            <br><b>Resource</b>
+            <br><a href="template-stable.cpp" target="_blank">Template</a>
+            <br><a href="marriage-output.txt" target="_blank">Output</a>
+            <br>Project must be submitted on blackboard.
         </div>
 
         <script>

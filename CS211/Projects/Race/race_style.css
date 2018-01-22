@@ -186,7 +186,10 @@ header #logo{
 #main a{
     color: #ee4747
 }
-
+img {
+    height: auto;
+    max-width: 100%;
+}
 .foot{
     background: #35424a;
     overflow:hidden;
@@ -198,4 +201,23 @@ header #logo{
 }
 .foot .name{
     padding-right: 100px;
+}
+
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
+    #main{
+        font-size: 1rem; 
+        padding:0;
+    }
+    embed{
+        display: none;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .foot{
+        font-size: .75rem;
+    }
 }

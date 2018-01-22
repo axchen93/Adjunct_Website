@@ -83,10 +83,49 @@
         </div>
 
         <div id="main">
-
+            <h3>Purpose</h3>
+            <p>
+                The goal of this project is to print a chess board graphic of the solutions to 8 queens problem. This project will be utilize <a href="../../Notes/Typedef/" target="_blank">typedef.</a>
+            </p>
             
-
+            <h3>Box</h3>
+            <p>
+                <img src="img1.jpg" alt="box typedef">
+                <br>box is now a datatype that refers to a 2D array, with 5 rows and 7 columns of characters.
+                <br>bb and wb are both of the type box; they are both 2D arrays of characters with 5 rows and 7 columns. 
+                <br>Board is a 2D array with 8 rows and 8 columns that contains pointers to variables of box type. They store the address of box variables. 
+            </p>
            
+            <h3>bb and wb</h3>
+            <p>
+                <img src="img2.jpg" alt="">
+                <br>bb stands for black box so each element of the array contains char(219), which is the ascii code of a black box. 
+                <br>wb stands of white box so each element contains an empty space. 
+                <br>Remember that both wb and bb are of the type box, which is a 2D array of CHARACTERS. So in bb we are storing a char and wb the empty space is in single quotes and not double quotes.
+                <br><img src="img3.jpg" alt="">
+            </p>
+
+            <h3>Board</h3>
+            <p>
+                Notice how we only create one bb and one wb, but a chessboard has more than 2 boxes. This is because board is a 2D array of pointers to the box type. Each element of board is a a pointer to a box, and therefore stores the memory address of the box. We will uses only the one bb and wb to populate the entire array of board. Where a white box is, the address of wb will be stored and where a black box is, the address of bb is stored.
+                <br><img src="img4.jpg" alt="">
+            </p>
+            
+            <h3>Adding in the Queens</h3>
+            <p>
+                Set up the current solution on the chessboard by placing pointers to bq and wq in the appropriate square. bq is a queen on a black square and wq is a queen on a white square.
+            </p>
+
+            <h3>Printing the board</h3>
+            <p>
+                <img src="img5.jpg" alt="">
+                <br>*board[i][j] retrieves box pointer from board and then deference it. Doing so give access to the box that is being pointed to.
+            </p>
+
+            <br><b>Resources</b>
+            <br><a href="template-8queens-fancy.cpp" target="_blank">Template</a>
+            <br><a href="fancy print sample output with queens in place first solution.pdf" target="_blank">Sample Output</a>
+            <br>Project must be submitted on blackboard
         </div>
 
         <script>
