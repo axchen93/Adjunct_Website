@@ -83,10 +83,142 @@
         </div>
 
         <div id="main">
+            <h3>Purpose</h3>
+            <p>
+                The goal of this program is to find the shortest way to move throw a weighted 2D array. This project uses <a href="../../Notes/Memo/" target="_blank">memoization</a> to efficiently find the solution.
+            </p>
 
-            
+            <h3>Rules</h3>
+            <ol>
+                <li>Must go through one square on each column.</li>
+                <li>Each move can only go one square horizontally or diagonally. </li>
+                <li>The 2D array grid is a cylinder, it wraps around.</li>
+                <li>The squares are weighted; the number in each square represents the time it takes to travel through the square.</li>
+            </ol>
 
-           
+            <h3>Data Representation</h3>
+            <h4>2D array Weighted matrix:</h4>
+            <table>
+                <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <h4>Cost matrix: </h4>
+            <div class="cost">
+                <div class="cost-text">
+                    <p>
+                        The values at the matrix tell you the lowest possible cost to get to this square.
+                        <br>cost[i][j] = the total cost of the shortest path from the left side to square in row i and column j.
+                        <br>cost is what is being used for memoization.<br>
+                        <br>The highlighted square (row 0, col 1) has a cost of 3 because the shortest, cheapest path to the square is 2(row 1, col 0). The cost of traveling through square (row 0, col 1) is 1. So 2+1 =3.
+                    </p>
+                </div>
+                <div class="cost-table">
+                    <table>
+                        <tr>
+                            <td>3</td>
+                            <td style="color:red;">3</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>7</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </div>    
+            </div>    
+            <h4>Path matrix:</h4>
+            <p>
+                The path matrix keeps track of what path it took to get to that square.
+                <br>Path[i][j] tells what path is took to get to the square on row I and col j.
+                <br>The Path matrix stores STRINGS not integers. 
+            </p>
+            <div class="path">
+                
+                
+                <div class="path-text">
+                    <p>
+                        The highlighted 103 is path[3][2] or square at row 3 col 2.
+                        <br>103 tells us that it got to the square by going from square 1 of the first column. Then square 0 of the second column.  And finally it got to square 3 of the last column.
+                    </p>
+                </div>
+                <div class="path-table">
+                    <table>
+                    <tr>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>11</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>12</td>
+                        <td>112</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>03</td>
+                        <td style="color:red;">103</td>
+                    </tr>
+                    </table>
+                </div>
+            </div>    
+            <h3>Top-Down Recursion</h3>
+            <ol>
+                <li>Create function calCost that that’s in 2 integers; int i and int j. The function cal the shortest path/lowest cost to that location</li>
+                <li>Base case is if you are at the left most column. The cost of the left most column is just its initial weight</li>
+                <li>If the cost for square (i j) has already been calculated, no need to recalculate it, just return the cost.</li>
+                <li>Calculate the cost of the left, up, and down square.</li>
+                <li>Save the min of the 3 cost into minCost. (you can use min function in the algorithm library)</li>
+                <li>Update the path matrix. Concatenate the current string for that square with the row of the current square. To concatenate two strings use + operator and to_string(i) (this convert the int i to a string)</li>
+                <li>Update the cost matrix with the minCost  + the weight of the current square</li>
+                <li>In the main function, call the calCost function on each of the right most squares. Check for the lowest costing one and print its cost and path.</li>
+            </ol>
+            <h3>Bottom-Up Non-Recursive</h3>
+            <ol>
+                <li>Create a function called calCost that will do all the work. </li>
+                <li>Fill out the cost matrix one at a time from the left end.</li>
+                <li>Copy the weight of the left-most col of the weight matrix to the left-most col of the cost matrix.</li>
+                <li>Go through the columns and calculate the cost of getting to each square. Save only the lowest cost. Update the path array. You can calculate the cost similar to how the recursive did it. Calculate the up, down, left(right) of the square and save the smallest one.</li>
+                <li>In the main function just call the calCost function.  Check for the lowest cost in the right most column and print the path to it.</li>
+            </ol>
+            <h3>Resource</h3>
+            <a href="template-path-recursive.cpp" target="_blank">Recursive Template</a>
+            <br><a href="template-path-nonrecursive.cpp" target="_blank">Non-Recursive Template</a>
+            <br><a href="path-output.txt" target="_blank">Output</a>
+            <br>Both projects must be submitted on blackboard.
         </div>
 
         <script>
