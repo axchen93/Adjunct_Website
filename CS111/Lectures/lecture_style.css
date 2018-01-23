@@ -257,7 +257,11 @@ header #logo{
     background-image: url('img/img9.jpeg');
     background-position-y: -500px;
 }
-
+img {
+    height: auto;
+    max-width: 100%;
+    background-repeat: none;
+}
 .foot{
     background: #35424a;
     overflow:hidden;
@@ -269,4 +273,20 @@ header #logo{
 }
 .foot .name{
     padding-right: 100px;
+}
+
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
+    #main{
+        font-size: 1rem; 
+        padding:0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .foot{
+        font-size: .75rem;
+    }
 }

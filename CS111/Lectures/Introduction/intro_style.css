@@ -150,14 +150,18 @@ header #logo{
 }
 
 .side-nav a{
-    padding: 10px 10px 10px 30px;
+    padding: 0px 10px 0px 30px;
     text-decoration: none;
     font-size: 25px;
     color: #ccc;
     display: block;
     line-height: 50px;
 }
-
+.submenu a{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 50px;
+}
 .side-nav a:hover{
     color: #fff;
 }
@@ -185,6 +189,12 @@ header #logo{
 #main a{
     color: #ee4747;
     text-decoration: none;
+}
+.left{
+    color: #a6ee47;
+}
+th{
+    text-align: start;
 }
 img {
     height: auto;

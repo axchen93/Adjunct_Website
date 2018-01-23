@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--lectures homepage-->
+<!DOCTYPE html><!--introduction lecture-->
 <html lang="en">
     <head>
         <meta charset ="utf-8">
@@ -70,10 +70,22 @@
         </nav>
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="../../" class="btn-111" onclick="subMenu1()">CS 111</a>
-            <a href="../../../CS211" class="btn-211" onclick="subMenu2()">CS 211</a>
-            <a href="../../../Java" class="btn-java">Java</a>
-            <a href="../../../Data Structures" class="btn-ds">Data Structure</a>
+            <a href="../../" class="btn-111">Home (CS 111)</a>
+            <a href="../" >Lectures</a>
+            <div class="submenu">
+                <a href="../Introduction/">Introduction</a>
+                <a href="../Basics/">C++ Basic</a>
+                <a href="../Decisions/">Decisions</a>
+                <a href="../Patterns/">Printing Patterns</a>
+                <a href="../Functions/">Functions</a>
+                <a href="../Recursions/">Recursion</a>
+                <a href="../Arrays/">Arrays</a>
+                <a href="../Strings/">Strings</a>
+                <a href="../IO/">File IO</a>
+            </div>    
+            <a href="../../Assignments/">Assignments</a>
+            <a href="../../Review/">Review</a>
+            <a href="http://venus.cs.qc.edu/~ryba/cs111/" target="_blank">Ryba's Website</a>
         </div>
         <section id="main">
             <h3>Algorithmic Problem Solving with C++</h3>
@@ -168,39 +180,120 @@
                 Below are some common Unix commands. 
                 <table>
                     <thead>
-                        <td>Files and Navigation</td>
+                        <th>Files and Navigation:</th>
                     </thead>
                     <tr>
-                        <td>cd [folderName]</td>
+                        <td class="left">cd [folderName]</td>
                         <td>Change the current directory</td>
                     </tr>
                     <tr>
-                        <td>cd .. </td>
+                        <td class="left">cd .. </td>
                         <td>Go to parent directory</td>
                     </tr>
                     <tr>
-                        <td>ls</td>
+                        <td class="left">ls</td>
                         <td>List the files in the current directory</td>
                     </tr>
                     <tr>
-                        <td>mkdir [folderName] </td>
+                        <td class="left">mkdir [folderName] </td>
                         <td>Create a new folder</td>
                     </tr>
                     <tr>
-                        <td>pwd [fileName] </td>
+                        <td class="left">pwd [fileName] </td>
                         <td>Print the path of the current directory</td>
                     </tr>
                     <tr>
-                        <td>rm [fileName]  </td>
+                        <td class="left">rm [fileName]  </td>
                         <td>Delete a file</td>
                     </tr>
                      <tr>
-                        <td>rmdir [folderName]</td>
+                        <td class="left">rmdir [folderName]</td>
                         <td>Delete an empty folder</td>
                     </tr>
                     <tr>
-                        <td>up key</td>
+                        <td class="left">up key</td>
                         <td>Previous command (press up multiple times to see your command history)</td>
+                    </tr>
+                    <tr>
+                        <td class="left">touch [fileName]</td>
+                        <td>Creates a file in your current directory with fileName</td>
+                    </tr>
+                </table>
+                <table>
+                    <thead>
+                        <th>Compiling and Running:</th>
+                    </thead>
+                    <tr>
+                        <td class="left">g++ [sourceFile]</td>
+                        <td>Compile a source code file and create an executable named a.out</td>
+                    </tr>
+                    <tr>
+                        <td class="left">./a.out</td>
+                        <td>Run the file named a.out</td>
+                    </tr>
+                    <tr>
+                        <td class="left">g++ [sourceFile] -o [exeFile]</td>
+                        <td>Same as above, but you can specify the name of the executable</td>
+                    </tr>
+                    <tr>
+                        <td class="left">./[exeFile]</td>
+                        <td>Run the file with the specified name</td>
+                    </tr>
+                    <tr>
+                        <td class="left">ctrl C</td>
+                        <td>Kill the process (you can use this to exit a program if you are stuck in an infinite loop)</td>
+                    </tr>
+                </table>
+                <h3>Text Editors</h3>
+                <p>You can use pico, vi, or emacs to edit text files on Unix. pico is the simplest of the 3 editors, but it has fewer features. Alternatively you can use any text editor for this course such as Visual Studio Code, Atom, Sublime, etc.</p>
+                <table>
+                    <thead>
+                        <th>pico</th>
+                    </thead>
+                    <tr>
+                        <td class="left">pico [fileName]</td>
+                        <td>Open a file (or create a new file if the file does not exist)</td>
+                    </tr>
+                    <tr>
+                        <td class="left">ctrl O</td>
+                        <td>Save the file (without closing)</td>
+                    </tr>
+                    <tr>
+                        <td class="left">ctrl X</td>
+                        <td>Close the file (it will ask if you want to save)</td>
+                    </tr>
+                </table>
+
+                <p>
+                    vi has 2 modes, command mode and insert mode.  You start in command mode.  You must be in insert mode to type text into the file, and you must be in command mode to save or quit.
+                </p>
+                <table>
+                    <thead>
+                        <th>vi</th>
+                    </thead>
+                    <tr>
+                        <td class="left">vi [fileName]</td>
+                        <td>Open a file (or create a new file if the file does not exist)</td>
+                    </tr>
+                    <tr>
+                        <td class="left">i</td>
+                        <td>Switch from command mode to insert mode</td>
+                    </tr>
+                    <tr>
+                        <td class="left">ESC</td>
+                        <td>Switch from insert mode to command mode</td>
+                    </tr>
+                    <tr>
+                        <td class="left">:w</td>
+                        <td>Save the file (without closing)</td>
+                    </tr>
+                    <tr>
+                        <td class="left">:wq</td>
+                        <td>Save and close the file</td>
+                    </tr>
+                    <tr>
+                        <td class="left">:q!</td>
+                        <td>Close the file without saving</td>
                     </tr>
                 </table>
             </p>
