@@ -292,6 +292,13 @@ body{
     .section-1, .section-2, .section-3{
         padding: 5px;
         margin: 0;
+        font-size: 1em;
+    }
+    .text2, .text3, ul{
+        padding: 0;
+    }
+    .section-1a{
+        padding: 5px;
     }
     .navbar-nav{
         display: none;
