@@ -89,31 +89,204 @@
         </div>
         <section id="main">
             <div id="basic">
-
+                <h3>C++ Language Basics</h3>
+                <p>
+                    <img src="img1.png" alt="img1" height="200" width="200">
+                    <br>A typical C++ program will look something like this:
+                    <br><img src="img2.png" alt="img2">
+                    <br>Compiling and running this program looks like this:
+                    <br><img src="img3.png" alt="img3">
+                    <br>When you run the program, it will start at the beginning of the main function, execute each statement in order until it reaches the return statement at the end of the main function, and then exit (return statements will be explained later).
+                    <br>Each statement ends with a semicolon (;).
+                    <br>C++ is case-sensitive.
+                </p>
+                <h4>Comments</h4>
+                <p>
+                    Comments are lines of text that are not execute. Comments are for our eyes only; compilers ignore them.
+                </p>
+                <ul>
+                    <li>Inline comment
+                        <br>Marks the rest of the text on the line as a comment
+                        <br><img src="img4.png" alt="img4">
+                    </li>
+                    <li>Multi-line comment
+                        <br>Multi-line comment Marks a block of text as comments
+                        <br><img src="img5.png" alt="img5">
+                    </li>
+                </ul>
             </div>
 
             <div id="output">
-
+                <h3>Output</h3>
+                <p>
+                    We use <span class="code">cout</span> to print to the console.
+                    <br><img src="img6.png" alt="img6">
+                    <br>When this statement is executed, whatever is to the right of the << is printed to the console. It may be either a literal or a variable (of any type)
+                    <br>C++ is a case-sensitive language. <span style="color:gold;">COUT</span>, <span style="color:orange;">Cout</span>, and <span style="color:rgb(255, 72, 0);">cout</span> are not the same things.
+                    <br>You can use chaining to print multiple literals and/or variables with a single statement.
+                    <br><img src="img7.png" alt="img7">
+                </p>
             </div>
 
             <div id="lit-var">
-
-            </div>
-
-            <div id="declaring">
-
+                <h3>Literals, Data types, and Variables</h3>
+                <p>
+                    Both literals and variables have a value and a data type. A literal represents a specific value. A variable has a name which refers to a location in memory, and its value may change. 
+                    <br>Data types are what we use to represent data. Keywords are words reserved by the programming language. The keywords below are only data types we will use in this course.
+                </p>
+                <table>
+                    <thead>
+                        <th>Data Type</th>
+                        <th>Description</th>
+                        <th>Examples of Literals</th>
+                    </thead>
+                    <tr>
+                        <td class="code">int</td>
+                        <td>Integer (positive or negative) </td>
+                        <td>5, -3 , 21927303</td>
+                    </tr>
+                    <tr>
+                        <td class="code">double</td>
+                        <td>Double-precision floating-point</td>
+                        <td>3.14, -2.19, .00009</td>
+                    </tr>
+                    <tr>
+                        <td class="code">bool</td>
+                        <td>true or false </td>
+                        <td>true, false</td>
+                    </tr>
+                    <tr>
+                        <td class="code">char</td>
+                        <td>A single character </td>
+                        <td>'c', '20', '$'</td>
+                    </tr>
+                    <tr>
+                        <td class="code">string</td>
+                        <td>A sequence of 0 or more characters</td>
+                        <td>"Hello", "", "3.14"</td>
+                    </tr>
+                </table>
+                <p>
+                    Some more notes:
+                    <ul>
+                        <li>string is surrounded by double quotes, while char is surrounded by single quotes.</li>
+                        <li>int, double, bool, and variable names are not surrounded by quotes</li>
+                        <li>"" is an empty string.</li>
+                        <li>\n is a newline character. It is one of several special characters. If you print the string "1\n2" it will print 1 and 2 on separate lines. You can also use endl to print a newline character (as shown in the first example on the top of this page).</li>
+                    </ul>
+                </p>
+                <h4>Declaring Variables</h4>
+                <p>
+                    Variables store data so that we can process the data. Variables have data types. We must declare (create) variables before we can use them. Variable names:  
+                    <ul>
+                        <li>Must begin with a letter, can end with a number </li>
+                        <li>Can only be declared once within the same {scope} </li>
+                        <li> Cannot contain spaces</li>
+                        <li>Cannot contain special characters, except underscore (i.e. “_”) </li>
+                        <li>Cannot be a keyword </li>
+                        <li>Should generally make sense</li>
+                        <li>Common pratices are camel case (camelCaseVariableName) and snake case (snake_case_variable_name)</li>
+                    </ul>
+                    <br><img src="img8.png" alt="img8">
+                    <br>x and y still refer to different locations in memory, so modifying x later in the program will not affect y.
+                    <br>Note: If you use a variable that you did not initialize, its value may be garbage, which will cause unpredictable results.   
+                </p>
             </div>
 
             <div id="inout">
-
+                <h3>Input</h3>
+                <p>
+                    We use <span class="code">cin</span> to get input from the user (upon hitting ENTER).
+                </p>
+                <img src="img9.png" alt="img9">
+                <br>When the cin statement is executed, the program will wait until the user types something and presses enter. Whatever the user types is stored in the variable name.
+                <ul>
+                    <li>If the variable is a string, it will read everything up to the first whitespace character (the rest of the input will remain in the buffer to be used for the next cin statement).</li>
+                    <li>cin can be chained just like cout (note that cin uses >> and cout uses <<).</li>
+                </ul>
             </div>
 
             <div id="operators">
-
+                <h3>Operators</h3>
+                <p>
+                    An expression is a sequence of operators and operands (an operand can be a literal or a variable).
+                </p>
+                <ul>
+                    <li>An expression is evaluated one operator at a time, in order from highest to lowest precedence.</li>
+                    <li>Anything inside parentheses is evaluated before the operators surrounding the parentheses.</li>
+                    <li>Operators of the same precedence are evaluated in the direction of their associativity.
+                    </li>
+                    <li>Arithmetic operators do not modify variables. The assignment operator = changes the value of the variable on the left.
+                    </li>
+                </ul>
+                <p>
+                    Below are some operators from highest to lowest precedence, and their associativity.
+                </p>		
+                <table>
+                    <thead>
+                        <th>Precendence</th>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Associativity</th>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>* , / , %</td>
+                        <td>multiplication, division, modulo</td>
+                        <td>left-to-right</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>+ , -</td>
+                        <td>addition, subtraction</td>
+                        <td>left-to-right</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>=</td>
+                        <td>assignment</td>
+                        <td>right-to-left</td>
+                    </tr>
+                </table>
+                <p>See this <a href="http://http://en.cppreference.com/w/cpp/language/operator_precedence">page</a> for more resources.</p>
+                <img src="img10.png" alt="img10">
+                <ol>
+                    <li>1 + x is evaluated first because it is inside parentheses. It evaluates as 3. The value      of x is not changed. 
+                        <br>y = 6 / 3 * 2
+                    </li>
+                    <li>
+                        6 / 3 is evaluated next because / and * have left-to-right associativity. It evaluates as 2. 
+                        <br>y = 2 * 2
+                    </li>
+                    <li>
+                        2 * 2 evaluates as 4. 
+                        <br>y = 4
+                    </li>
+                    <li>A value of 4 is assigned to y.</li>
+                </ol>
+                <p>
+                Notes about operators:
+                <ul>
+                    <li>An arithmetic operation on two ints evaluates as an int (in integer division, the result is rounded towards 0).</li>
+                    <li>
+                        If at least one operand is a double, it evaluates as a double.
+                        <ul>
+                            <li>To avoid integer division rounding, you can use type-casting to convert from int to double (see example below).</li>
+                        </ul>
+                    </li>
+                    <li>If x is negative, then (x % y) is equivalent to -(-x % y). Note that this is different from the math definition.</li>
+                </ul>
+                <img src="img11.png" alt="img11">
+                </p>
             </div>
-
+            
             <div id="casting">
-
+                <h3>Casting</h3>
+                <p>
+                    Sometimes we want to convert from one type to another. For instance convert an <span class="code">int</span> to a <span class="code">double</span> for a more precise result. This can be done through type casting.
+                    <br>Type casting is a temporary change from one type to another.
+                    <br><img src="img12.png" alt="img12">
+                </p>
             </div>
         </section>
         <script>
