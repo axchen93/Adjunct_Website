@@ -181,14 +181,21 @@ header #logo{
     border-bottom:#ffffff 1px solid;
     padding: 0 300px;
     min-height: 75vh;
-    font-size: 20px;
+    font-size: 15px;
 }
 #main h3{
     color: #28b9f3;
+    font-size: 25px;
+    margin-top: 0;
 }
 #main a{
     color: #ee4747;
     text-decoration: none;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 .left{
     color: #a6ee47;

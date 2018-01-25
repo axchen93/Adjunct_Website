@@ -182,14 +182,17 @@ header #logo{
     border-bottom:#ffffff 1px solid;
     padding: 0 300px;
     min-height: 75vh;
-    font-size: 20px;
+    font-size: 15px;
 }
 #main h3{
+    margin-top: 0;
     color: #28b9f3;
+    font-size: 25px;
 }
 #main a{
     color: #ee4747;
     text-decoration: none;
+    
 }
 .code{
     color: #a6ee47;
@@ -210,6 +213,11 @@ td{
 img {
     height: auto;
     max-width: 100%;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
 .foot{

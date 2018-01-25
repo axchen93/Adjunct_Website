@@ -182,24 +182,25 @@ header #logo{
     border-bottom:#ffffff 1px solid;
     padding: 0 300px;
     min-height: 75vh;
-    font-size: 20px;
+    font-size: 15px;
 }
 #main h3{
     color: #28b9f3;
+    font-size: 25px;
+    margin-top: 0;
 }
 #main a{
     color: #ee4747;
     text-decoration: none;
 }
-.left{
-    color: #a6ee47;
-}
-th{
-    text-align: start;
-}
 img {
     height: auto;
     max-width: 100%;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 .foot{
     background: #35424a;
@@ -218,7 +219,6 @@ img {
         font-size: 2rem;
     }
     #main{
-        font-size: 1rem; 
         padding:0;
     }
     .navbar-nav{

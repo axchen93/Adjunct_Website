@@ -88,9 +88,83 @@
             <a href="http://venus.cs.qc.edu/~ryba/cs111/" target="_blank">Ryba's Website</a>
         </div>
         <section id="main">
-        
-            
-
+            <div id="nested">
+                <h3>Nested Loop</h3>
+                <p>Similar to how conditionals can be nested, we can also nest loops. For example, this code below:</p>
+                <img src="img1.png" alt="img1">
+                <p>It will print the following:</p>
+                <img src="img2.png" alt="img2">
+                <p>How did this work?
+                    <ul>
+                        <li>The first for loop, lets call loop i, is executed first. So it executed all the codes within loop i.
+                        </li>
+                        <li>Within loop i is a second for loop, called loop j. Within loop j is a cout statment that just prints out the value of j.</li>
+                        <li>But the entire j loop must be ran before continuting. So it print all numbers of j, which is 0-9.</li>
+                        <li>Notice that all the numbers of j loop got printed and we are still in the first iteration of loop i.</li>
+                        <li>After j teminates, the program jumps back up to loop i, increments i, and executed loop j again.</li>
+                        <li>This process is done 10 times.</li>
+                    </ul>
+                </p>
+            </div>
+            <hr>
+            <div id="patterns">
+                <h3>Pattern Printing</h3>
+                <p>
+                    Printing patterns can be done with a nested loop. Below are examples of how to print patterns. In all of these examples, keep in mind that you must print an entire row before moving onto the next row. It really helps to think that the pattern is in a numbered grid.
+                </p>
+            </div>
+            <hr>
+            <div id="rectangles">
+                <h3>Rectangles</h3>
+                <p>Each iteration of the inner loop prints an X. The entire inner loop prints a row of COLS Xs. After you finish printing a row, then print a newline. Repeat the row/newline combination ROWS times. Notice that the newline is in the outer loop but not the inner loop.</p>
+                <img src="img3.png" alt="img3">
+            </div>
+            <hr>
+            <div id="non-solid">
+                <h3>Non-solid rectangles</h3>
+                <p>A rectangle where the character to print depends on a condition. To do this, replace the cout statement in the inner loop with a conditional statement. The condition will depend on the current row or column (the loop counters r and c), and may depend on the rectangle size. Imagine the pattern on a numbered grid.</p>
+                <img src="img4.png" alt="img4">
+                <p>Example: Middle column Os</p>
+                <img src="img5.png" alt="img5">
+                <p>Example: Cross (middle column Os and middle row Os)</p>
+                <img src="img6.png" alt="img6">
+                <p>Example: O on even rows</p>
+                <img src="img7.png" alt="img7">
+            </div>
+            <hr>
+            <div id="diag-lines">
+                <h3>Squares with diagonal lines</h3>
+                <p>When printing diagonal lines, it can help to think of the condition as a math function. In the function y = mx + b, m is the slope and b is the y-intercept. In the examples above we used r and c, so r==c is equivalent to the math function y=x (slope = 1, y-intercept = 0).</p>
+                <img src="img8.png" alt="img8">
+                <p>Example: Diagonal of Os</p>
+                <img src="img9.png" alt="img9">
+                <p>In this example, r counts down instead of up to coincide with the X-Y plane used in math
+                (higher Y-values on top).  Counting up would also work (but then the function would be different).</p>
+                <p>Example: Diagonal shifted up by 2</p>
+                <img src="img10.png" alt="img10">
+                <p>Example: Opposite-direction diagonal</p>
+                <img src="img11.png" alt="img11">
+                <p>If you're not sure about the y-intercept, draw a numbered grid and double-check a few squares.</p>
+                <p>Example: Shaded above the diagonal</p>
+                <img src="img12.png" alt="img12">
+                <p>Like in math, use < and > for shaded regions.
+                    <br>Double-check a few squares to make sure you've shaded the correct side.
+                    <br>You can use this strategy to draw triangles (use space for 1 of the 2 characters).</p>
+            </div>
+            <hr>
+            <div id="triangles">
+                <h3>Triangles</h3>
+                <p>Sometimes you don't have to draw the entire rectangle, which may allow you to use a different strategy. In a triangle, the number of characters to print on a particular row depends on the row number.</p>
+                <p>Example: Lower-left-shaded triangle</p>
+                <img src="img13.png" alt="img13">
+                <p>Example: Upper-left-shaded triangle</p>
+                <img src="img14.png" alt="img14">
+                <p>In this example, r counts down so that it coincides with the number of characters in the row.</p>
+                <p>Example: Pyramid</p>
+                <img src="img15.png" alt="img15">
+                <p>Use 2 inner loops, one for the spaces and one for the Xs.
+                    <br>You can draw a table to figure out how many of each character to print in terms of r.</p>
+            </div>
         </section>
         <script>
             function openSlideMenu(){
