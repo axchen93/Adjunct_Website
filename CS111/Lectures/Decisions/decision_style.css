@@ -191,11 +191,21 @@ header #logo{
     color: #ee4747;
     text-decoration: none;
 }
-.left{
+.code{
     color: #a6ee47;
+}
+table{
+    border: #fff 1px solid;
+    border-collapse: collapse;
 }
 th{
     text-align: start;
+    border: #fff 1px solid;
+    padding: 5px;
+}
+td{
+    border: #fff 1px solid;
+    padding: 5px;
 }
 img {
     height: auto;

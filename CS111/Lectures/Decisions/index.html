@@ -88,9 +88,125 @@
             <a href="http://venus.cs.qc.edu/~ryba/cs111/" target="_blank">Ryba's Website</a>
         </div>
         <section id="main">
-        
-            
-
+        <h3>Conditionals</h3>
+        <p>Statements are executed in order, but some statements, such as conditional statements, cause execution to jump to another point in the code.</p>
+        <div id="boolean">
+            <h3>Boolean expressions</h3>
+            <p>A boolean expression is an expression that evaluates as true or false. There are two types of operators that evaluate as true/false: relational operators and logical operators. They are listed below, together with arithmetic and assignment.</p>
+            <table>
+                <thead>
+                    <th>Precedence</th>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Associativity</th>
+                </thead>             
+                <tr>
+                    <td>1</td>
+                    <td>!</td>
+                    <td>logical NOT</td>
+                    <td>right-to-left</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>* / % </td>
+                    <td>multiplication, division, modulo</td>
+                    <td>left-to-right</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>+ -</td>
+                    <td>addition, subtraction </td>
+                    <td>left-to-right</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>< <= > >= </td>
+                    <td>relational <, ≤, >, ≥ </td>
+                    <td>left-to-right</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>== !=  </td>
+                    <td>relational =, ≠ </td>
+                    <td>left-to-right</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&&</td>
+                    <td>logical AND</td>
+                    <td>left-to-right</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>||</td>
+                    <td>logical OR</td>
+                    <td>left-to-right</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>=</td>
+                    <td>assignment</td>
+                    <td>right-to-left</td>
+                </tr>
+            </table>
+            <br><img src="img1.png" alt="img1">
+        </div>
+        <div id="condition">
+            <h3>Conditional statements</h3>
+            <p>
+                A conditional statement uses a condition to decide whether or not to execute a block of code. The condition must be a boolean expression. A block is a group of statements surrounded by {}.
+            </p>
+            <h4 class="code">if</h4>
+            <img src="img2.png" alt="img2">
+            <h4 class="code">if-else</h4>
+            <img src="img3.png" alt="img3">
+            <ul> 
+                <li>The if-else statement will execute 1 of the 2 blocks, but not both.</li>
+                <li>If a block contains only 1 statement, the {} are optional.</li>
+                <li>The compiler does not care about indentation, but you should indent anything inside a block to improve readability.</li>
+                <li>There is no condition next to the else. An if-else statement only has one condition.</li>
+            </ul>
+            <img src="img4.png" alt="img4">
+        </div>
+        <div id="nested">
+            <h3>Nested conditionals</h3>
+            <p>A block may include a conditional statement. This allows you to chain if-else statements.</p>
+            <img src="img5.png" alt="img5">
+        </div>
+        <div class="loops">
+            <h3>Loops</h3>
+            <p>A loop repeats a block of code as long as a condition is true. If the block contains only 1 statement, the {} are optional.</p>
+            <h4 class="code">while</h4>
+            <img src="img6.png" alt="img6">
+            <h4 class="code">for</h4>
+            <p>Any while-loop can be written as a for-loop. for-loops are often used to repeat a loop a specific number of times. The two loops below are equivalent.</p>
+            <img src="img7.png" alt="img7">
+            <ul>  
+                <li>Initialization is done only once before the first iteration of the loop.</li>
+                <li>Increment is done at the end of each iteration of the loop.</li>
+                <li>If you omit the condition in a for-loop, it will be evaluated as true.</li>
+            </ul>
+        </div>
+        <div class="increments"></div>
+            <h3></h3>
+            <p>
+                Incrementing is often done with operators.
+                <ul>
+                    <li>++i is equivalent to i = i+1 (++i is pre-increment; in the examples below, post-increment would have the same effect)</li>
+                    <li>--i is equivalent to i = i-1</li>
+                    <li>i += 3 is equivalent to i = i+3 (there is a compound assignment operator for each arithmetic operator)</li>
+                </ul>
+            </p>
+            <img src="img8.png" alt="img8">
+            <p>In the first example, each time you evaluate the condition, i has a different value. The 11th time you evaluate the condition, i is 11, so the condition is false and the loop ends.</p>
+            <h4><span class="code">break</span> and <span class="code">continue</span></h4>
+            <p>break exits from a loop. continue takes you back to the beginning of a loop. while (true) loops will usually include a break statement to avoid an infinite loop.</p>
+        <div class="problems">
+            <h3>Problems involving loops</h3>
+            <h4>Digits</h4>
+            <p>Problems involving digits can often be solved with the following strategy. The number of digits in x will be the number of times that the loop repeats, because after removing the last digit that many times, x will be 0.</p>
+            <img src="img9.png" alt="img89">
+        </div>
         </section>
         <script>
             function openSlideMenu(){
