@@ -88,9 +88,94 @@
             <a href="http://venus.cs.qc.edu/~ryba/cs111/" target="_blank">Ryba's Website</a>
         </div>
         <section id="main">
-        
-            
+            <h3>Functions</h3>
+            <p>
+                A function is a block of code with a name. You can jump into a function by calling it, and then return to where you left off. Functions make your program more organized by breaking it down into smaller parts, and they allow you to avoid repeating code. Some functions return a value, and you can think of these function calls as expressions that are evaluated as whatever they return. Some functions take parameters. Execution always begins in the main function.
+            </p>
+            <hr>
+            <div id="func-def">
+                <h3>Function Definitions</h3>
+                <img src="img1.png" alt="img1">
+                <ul>
+                    <li>returnType may be any data type.</li>
+                    <li>functionName must be a valid variable name.</li>
+                    <li>parameterList is a comma-separated list of 0 or more parameters and their types.</li>
+                    <li>You cannot define 2 functions with both the same name and the same number/types of parameters.
+                    </li>
+                </ul>
+            </div>
 
+            <hr>
+
+            <div id="func-call">
+                <h3>Function Calls</h3>
+                <p>
+                    In order to call / use a function, you call the function by using the funcation name, followed by () and supplying the needed parameters within. 
+                </p>
+                <img src="img2.png" alt="img2">
+                <ul>
+                    <li>function_name is the name of the function that you want to call.</li>
+                    <li>parameter_list is a comma-separated list of parameters(requirements of the function). It does not include the parameter types.</li>
+                    <li>The parameters in your function call must match the parameters of a function definition (same number of parameters, same types).</li>
+                    <li>Some types can be converted automatically. For example, you can pass an int to a function that takes a double parameter.</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div id="return">
+                <h3>Functions That Return Values</h3>
+                <p>As stated above, the function call is evaluated as whatever the function returns. The function exits by returning a value, and it must return a value of the correct type.</p>
+                <img src="img3.png" alt="img3">
+                <ul>
+                    <li>The function call may be part of a larger statement.</li>
+                    <li>Returning 0 from the main function indicates that the program exited successfully (but if you omit it, the program will still work).
+                        </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div id="void">
+                <h3>Void Functions</h3>
+                <p>A function with a return type of void does not return a value. The function exits when you reach either a return statement or the end of the function. Execution then returns to the point right after the function call. A void function does not need to have a return statement.
+                </p>
+                <img src="img4.png" alt="img4">
+                <p>A void function call may not be part of a larger statement.
+                    <br>HINT** if a function call has an assignment = to its left, the function CANNOT be a return type of void.
+                </p>
+
+            </div>
+
+            <hr>
+
+            <div id="parameter">
+                <h3>Passing Parameters</h3>
+                <p>
+                    A function cannot access variables from other functions unless you pass them as parameters. When you call a function, first the parameter expressions are evaluated. Then those values are copied into the function's parameters, which can be used inside the function like variables. Each function call has its own stack frame to store variables and parameters, and modifying them will not affect the variables in other function calls.
+                </p>
+                <img src="img5.png" alt="img5">
+            </div>
+
+            <hr>
+
+            <div id="reference">
+                <h3>Pass By Reference</h3>
+                <p>
+                    A reference stores the address of another variable, and you can use it as if it was the original variable. If you pass a parameter by reference, anything you do to that parameter also happens to the original variable. This allows you to modify a variable from inside a function. To pass by reference, add a & next to the parameter in the function header.
+                </p>
+                <img src="img6.png" alt="img6">
+            </div>
+
+            <hr>
+
+            <div id="library">
+                <h3>Library Functions</h3>
+                <p>Below we call 2 functions from the cmath library. Each function takes a number as a parameter, performs a calculation, and returns the result of the calculation.</p>
+                <img src="img7.png" alt="img7">
+                <p>Here a function from the C++ standard library to generate a "random" number</p>
+                <img src="img8.png" alt="img8">
+            </div>
         </section>
         <script>
             function openSlideMenu(){
