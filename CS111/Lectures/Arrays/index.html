@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--lectures homepage-->
+<!DOCTYPE html><!--array homepage-->
 <html lang="en">
     <head>
         <meta charset ="utf-8">
@@ -88,9 +88,37 @@
             <a href="http://venus.cs.qc.edu/~ryba/cs111/" target="_blank">Ryba's Website</a>
         </div>
         <section id="main">
-        
-            
-
+            <h3>Arrays</h3>
+            <p>An array is a fixed-size collection of elements of the same type stored continuously in memory.
+                <br>Below is an array of size 3 (an array with 3 elements). 
+                <br>c is the name of the array. 
+                <br>To access a specific element, you must specify the index inside []. The first index is 0, and the last index is 1 less than the size. 
+                <br>5, 9, 7 are the values stored in the array.
+            </p>
+            <table>
+                <tr>
+                    <td class = "top">5</td>
+                    <td class = "top">9</td>
+                    <td class = "top">7</td>
+                </tr>
+                <tr>
+                    <td>c[0]</td>
+                    <td>c[1]</td>
+                    <td>c[2]</td>
+                </tr>
+            </table>
+            <hr>
+            <h3>Declaring Arrays, Accessing Elements, and Printing:</h3>
+            <img src="img1.png" alt="img1">
+            <hr>
+            <h3>Multi-Dimensional Arrays</h3>
+            <p>A 2D array is a 1D array of 1D arrays. You can visualize it as a table, but the elements are stored continuously, starting with the 1st row.</p>
+            <img src="img2.png" alt="img2">
+            <hr>
+            <h3>Passing Arrays to Functions</h3>
+            <p>When you pass an array as a parameter, you are passing a pointer to the array, not the array itself. You can use [] to access elements, just like you would with a normal array. The pointer stores the address of the original array, which means you can modify the array from inside the function.
+            </p>
+            <img src="img3.png" alt="img3">
         </section>
         <script>
             function openSlideMenu(){
