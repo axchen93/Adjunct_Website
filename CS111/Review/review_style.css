@@ -197,59 +197,21 @@ header h1{
     border-bottom:#ffffff 1px solid;
     padding: 0 300px;
 }
-
-.text{
-    background-color: rgba(0, 0, 0, 0.7);
-    display:inline-block;
-    padding:5px;
-    border-radius: 10px;
-
+#main h3{
+    color: rgb(58, 187, 238);
 }
-.img{
-    text-align: center;
-    background-size: cover;
-    overflow: hidden;
-    opacity: 0.7;
-    height: 100px;
+#main a{
+    color: rgb(230, 115, 115);
+    font-size: 16px;
+    text-decoration: none;
 }
-
-#backtrack .img{
-    background-image: url('img/back.jpg');
+#main a:hover{
+    color: rgb(255, 0, 0);
 }
-
-#pointer .img{
-    background-image: url('img/pointer.jpg');
-    background-position-y: -550px;
+#main ul{
+    text-decoration: none;
+    list-style: none;
 }
-
-#hexadecimal .img{
-    background-image: url('img/hex.jpg');
-}
-
-#typedef .img{
-    background-image: url('img/type.jpg');
-    background-position-y: -600px;
-}
-
-#dynamic .img{
-    background-image: url('img/dynamic.jpg');
-    background-position-y: -250px;
-}
-
-#memo .img{
-    background-image: url('img/memo.jpg');
-    background-position-y: -500px;
-}
-#vector .img{
-    background-image: url('img/vector.jpg');
-    background-position-y: -150px;
-}
-
-#class .img{
-    background-image: url('img/class.jpg');
-    background-position-y: -300px;
-}
-
 .foot{
     background: #35424a;
     overflow:hidden;
@@ -261,4 +223,20 @@ header h1{
 }
 .foot .name{
     padding-right: 100px;
+}
+
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
+    #main{
+        font-size: 1rem; 
+        padding:0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .foot{
+        font-size: .75rem;
+    }
 }
