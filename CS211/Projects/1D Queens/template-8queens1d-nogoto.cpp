@@ -4,10 +4,7 @@ using namespace std;
 
 // Returns true if the queen in column c is ok
 bool ok(int q[], int c) {
-   for each i from 0 to c-1
-      if (there is a conflict between the queens in columns i and c)
-         return false;
-   return true;
+   
 }
 
 void print(int q[]) {
