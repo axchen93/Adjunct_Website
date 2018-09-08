@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+//implement the eqivalent functiom
 bool equivalent() {}
 
 int main() {
