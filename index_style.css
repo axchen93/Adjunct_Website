@@ -94,12 +94,12 @@ h1{
     overflow: hidden;
 }
 .split.left{
-    background:url('img/london.jpeg') center center no-repeat;
+    background:url('img/nyc.jpeg') center center no-repeat;
     left:0;
     transition: var(--speed) all ease-in-out;
 }
 .split.right{
-    background: url('img/nyc.jpeg') center center no-repeat;
+    background: url('img/wood.jpeg') center center no-repeat;
     right:0;
     transition: var(--speed) all ease-in-out;
 }

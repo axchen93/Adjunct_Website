@@ -1,0 +1,171 @@
+<!DOCTYPE html><!--313 Course-->
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "author" content ="Alex Chen">
+        <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
+        <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
+        <title>Alex Chen | Queens College CS </title>
+        <link rel="stylesheet" href="course.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <h1>CS313 - Course Information</h1>
+                </div>
+                <div id="info">
+                    <ul>
+                        <li>Alex Chen</li>
+                        <li>Adjunct Lecturer</li>
+                        <li>Email:axchen93@gmail.com</li>
+                        <li>Room:SB A201</li>
+                        <li>Office Hours: M 4-5PM</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+            <ul class="navbar-nav">
+                <li><a href="../">Home</a></li>
+                <li><a href="../Course/">Course Info</a></li>
+                <div class="note-drop">
+                    <li><a href="../Notes/">Notes</a></li>
+                        <div class="note-slide">
+                             <!--    <li><a href="Notes/"></a></li>      -->
+                        </div>
+                </div>
+                <div class="project-drop">
+                    <li><a href="../Projects/">Projects</a></li>
+                        <div class="project-slide">
+                             <!--    <li><a href="Notes/"></a></li>      -->
+                        </div>
+                </div>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="../">Home (CS 313)</a>
+            <a href="../Course/">Course Info</a>
+            <a href="../Notes/">Notes</a>
+            <a href="../Projects/">Projects</a>
+        </div>
+
+        <div id="main">
+            <h1>Syllabus</h1>
+            <section>
+                <h2>Instructor</h2>
+                <p>Alex Chen
+                    <br>Email: axchen93@gmail.com
+                    <br>Office: NSB A201
+                    <br>Office Hours: Monday 3:55pm - 4:55pm
+                </p>
+                <h2>Class Time</h2>
+                    Monday/Wednesday from 5pm - 6:15pm
+            </section>
+            <section>
+                <h2>Course Description</h2>
+                <p>	
+                Fundamentals data structures and their implementations:  stacks, queues, trees (binary and AVL), heaps, graphs, hash tables.  Searching and sorting algorithms.  Runtime analysis.  Examples of problem-solving using greedy-algorithm, divide-and-conquer, and backtracking.</p>
+            </section>
+            <section>
+                <h2>Textbooks</h2>
+                <p>
+                        Data Structures and Algorithms in Java
+                        <br>Author: Goodrich, Michael T., Tamassia 
+                        <br>Publisher: Wiley & Sons
+                </p>
+                <p>
+                        Algorithms 
+                        <br>Author: Sedgewick, Robert, Wayne, Kevi 
+                        <br>Publisher: Addison Wesley Professional
+                </p>
+            </section>
+            <section>
+                <h2>Grade Breakdown</h2>
+                <ul>
+                    <li>30% - 3 Projects</li>
+                    <li>30% - Midterm</li>
+                    <li>40% - Final</li>
+                </ul>
+                <p>*A curve is not guaranteed</p>
+                <p>
+                    Projects are due on the due date assgined.
+                    <br>Late penalty:
+                    <br> 1 day late: Max 85%
+                    <br> 2 days late: Max 75%
+                    <br> 3 days late: Max 65%
+                    <br> Projects that are submitted after 3 days will not be graded and a 0 is given
+                    <br> Projects that do not compile will be given a 0
+                    <br> Files submitted must be .java source code, .class files will not be accepted
+                </p>
+
+            </section>
+            <section>
+                <h2>Addendum from the Department Chair</h2>
+                F (Failing) is assigned for work that, in the judgment
+                of the instructor, does not deserve college credit. WU
+                (Withdrawn Unofficially) is assigned by the instructor to
+                indicate that the student stopped attending the course
+                before the end of the semester; or as a result of excessive
+                absences there is no basis to give a final letter grade of
+                A+ to F, and the conditions for a grade of INC do not
+                apply. Therefore, a student who attended classes and
+                showed up for exams is to be evaluated based on his/her
+                work, and gets a grade of A+ to F, not WU. On the other
+                hand, a student who stopped attending classes at some
+                point and skipped the final exam without any attempt to
+                communicate with the instructor should get WU, not F
+                (certainly not D or better). Any request from a student
+                who disappeared from your class to change his/her WU
+                to F should be rejected.
+                Since attendance is not part of my grading policy, Students who attend both the midterm and the final will
+                be awarded a letter grade A+ to F.
+                <h2>Plagiarism</h2>
+                Any form of plagiarism both copying from others or allowing others to copy is a serious academic infraction. If any student is caught copying, they will be reported to both the chair and the dean. Any projects that are plagiarized will recieve an 0 and reported. Any student caught cheating on an exam, will recieve an 0 on said exam and reported. 
+                <h2>Collaboration Policy:</h2>
+                <p>
+                        Students are encouraged to discuss concepts and share ideas. These discussions must be kept at a general level,
+                        without exposing your solutions. Please acknowledge these collaborations in your submission emails.
+                        <br>
+                        All submitted code must be written by yourself.
+                        Students are only allowed to copy code that was supplied by instructors, lectures, or texts. In these cases,
+                        students should cite their sources unless it was directly supplied by the instructor.
+                        <br>Sharing of code with other students is strictly prohibited.
+                        <br>By taking this class you are pledging to not share your solution with your classmates or any future student.
+                        Students may not post solutions for any assignments to publicly accessible website. This includes public
+                        repositories on GitHub and other version control software.
+                        <br>Protect your code, the college does not distinguish between sharer and receiver. If your solution is submitted by
+                        another student, both students face the same penalty
+                </p>
+            </section>
+        </div>
+
+        <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width='250px';
+            }
+
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width='0';
+            }
+        </script>
+    </body>
+    <footer class="foot">
+        <p class="name">Created by: Alex Chen</p>
+        <p class="contact">Contact information: axchen93@gmail.com</p>
+    </footer>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html><!--CS313 homepage-->
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "author" content ="Alex Chen">
+        <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
+        <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
+        <title>Alex Chen | Queens College CS </title>
+        <link rel="stylesheet" href="313_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+            <ul class="navbar-nav">
+                <li><a href="../">Home</a></li>
+                <li><a href="Course/">Course Info</a></li>
+                <div class="note-drop">
+                    <li><a href="Notes/" >Notes</a></li>
+                        <div class="note-slide">
+                        </div>
+                </div>
+                <div class="project-drop">
+                    <li><a href="Projects/">Projects</a></li>
+                        <div class="project-slide">
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="Notes/" >Notes</a>
+            <a href="Projects/">Projects</a>
+            <a href="../CS111/" >CS 111</a>
+            <a href="../CS111/" >CS 211</a>
+        </div>
+        
+        <div class="img1">
+            <div class="text1">
+                <span class="border">
+                    <h1>CS313 - Data Structure</h1>
+                </span>
+            </div>
+        </div>
+        <section class="section-1">
+            <div><h3>Course Information</h3></div>
+            <div class="section-1a">
+                <div>
+                    <ul>
+                        <li>Alex Chen</li>
+                        <li>Adjunct Lecturer</li>
+                        <li>Email:axchen93@gmail.com</li>
+                        <li>Room:SB A201</li>
+                        <li>Office Hours: M 4-5PM</li>
+                    </ul>
+                </div>
+                <div class="grading">
+                    <h4>Grading</h4>
+                    <ul class="grade">
+                        <li>Midterm - 30%</li>
+                        <li>Final - 40%</li>
+                        <li>3 Projects - 30% (10% each)</li>
+                    </ul>
+                    <p>All projects are to be submitted on Blackboard</p>
+                </div> 
+            </div>
+        </section>
+
+        <div class="img2">
+                <div class="text2">
+                    <span class="border">
+                        Topics
+                    </span>
+                </div>
+        </div>
+        <section class="section-2">
+                <ul>
+                    <li><a href="Notes/Arrays/">Arrays</a></li>
+                    <li><a href="Notes/Linked_List/">Linked List</a></li>
+                    <li><a href="Notes/Runtime_Analysis/">Runtime Analysis</a></li>
+                    <li><a href="Notes/Stacks/">Stacks</a></li>
+                    <li><a href="Notes/Queues">Queues</a></li>
+                    <!--    <li><a href="Notes/"></a></li>      -->
+                </ul>
+        </section>
+
+        <div class="img3">
+                <div class="text3">
+                    <span class="border">
+                        Projects
+                    </span>
+                </div>
+        </div>
+        <section class="section-3">
+                <ul>
+                    <li><a href="">Project 1 (Due : )</a></li>
+                    <li><a href="">Project 2 (Due : )</a></li>
+                    <li><a href="">Project 2 (Due : )</a></li>
+                    <!--    <li><a href="Notes/"></a></li>      -->
+                </ul>
+        </section>
+        <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width='250px';
+            }
+
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width='0';
+            }
+        </script>
+    </body>
+    <footer class="foot">
+            <p class="name">Created by: Alex Chen</p>
+            <p class="contact">Contact information: axchen93@gmail.com</p>
+    </footer>
+
+
+
+
+</html>

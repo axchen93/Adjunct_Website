@@ -1,0 +1,85 @@
+<!DOCTYPE html><!--313 Course-->
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "author" content ="Alex Chen">
+        <meta name = "description" content ="Course Material for CS111,CS211, and Data Structures">
+        <meta name = "keywords" content="computer science, Queens College, venus, C++, Java, Data Structures, CS111, CS211">
+        <title>Alex Chen | Queens College CS </title>
+        <link rel="stylesheet" href="notes_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <h1>CS313 - Notes</h1>
+                </div>
+                <div id="info">
+                    <ul>
+                        <li>Alex Chen</li>
+                        <li>Adjunct Lecturer</li>
+                        <li>Email:axchen93@gmail.com</li>
+                        <li>Room:SB A201</li>
+                        <li>Office Hours: M 4-5PM</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+            <ul class="navbar-nav">
+                <li><a href="../">Home</a></li>
+                <li><a href="../Course/">Course Info</a></li>
+                <div class="note-drop">
+                    <li><a href="../Notes/">Notes</a></li>
+                        <div class="note-slide">
+                             <!--    <li><a href="Notes/"></a></li>      -->
+                        </div>
+                </div>
+                <div class="project-drop">
+                    <li><a href="../Projects/">Projects</a></li>
+                        <div class="project-slide">
+                             <!--    <li><a href="Notes/"></a></li>      -->
+                        </div>
+                </div>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="../">Home (CS 313)</a>
+            <a href="../Course/">Course Info</a>
+            <a href="../Notes/">Notes</a>
+            <a href="../Projects/">Projects</a>
+        </div>
+
+        <div id="main">
+            
+        </div>
+
+        <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width='250px';
+            }
+
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width='0';
+            }
+        </script>
+    </body>
+    <footer class="foot">
+        <p class="name">Created by: Alex Chen</p>
+        <p class="contact">Contact information: axchen93@gmail.com</p>
+    </footer>
+</html>
