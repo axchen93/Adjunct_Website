@@ -42,13 +42,13 @@ header #logo{
     margin-top: 30px;
     font-size: 30px;
 }
-.navbar{
+.navbar_{
     background-color: #35424a;
     overflow:hidden;
     height:63px;
 
 }
-.navbar a{
+.navbar_ a{
     float:left;
     display:block;
     color: #ffffff;
@@ -58,12 +58,12 @@ header #logo{
     font-size:20px;
 }
 
-.navbar ul{
+.navbar_ ul{
     margin:3px 0 3px 0;
     list-style: none;
 }
 
-.navbar a:hover{
+.navbar_ a:hover{
     background-color:#dddddd;
     font-weight: bold;
     color: #28b9f3;
@@ -195,7 +195,6 @@ header #logo{
 }
 #main a{
     color: #fff;
-    font-size: 30px;
     text-decoration: none;
 }
 
@@ -220,7 +219,7 @@ header #logo{
         font-size: 1rem; 
         padding:0;
     }
-    .navbar-nav{
+    .navbar_nav{
         display: none;
     }
     .foot{

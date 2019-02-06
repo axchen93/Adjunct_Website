@@ -9,6 +9,7 @@
         <title>Alex Chen | Queens College CS </title>
         <link rel="stylesheet" href="notes_style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -28,7 +29,7 @@
             </div>
         </header>
 
-        <nav class="navbar">
+        <nav class="navbar_">
             <span class="open-slide">
                 <a href="#" onclick="openSlideMenu()">
                     <svg width="30" height="30">
@@ -38,19 +39,17 @@
                     </svg>
                 </a>
             </span>
-            <ul class="navbar-nav">
+            <ul class="navbar_nav">
                 <li><a href="../">Home</a></li>
                 <li><a href="../Course/">Course Info</a></li>
                 <div class="note-drop">
                     <li><a href="../Notes/">Notes</a></li>
                         <div class="note-slide">
-                             <!--    <li><a href="Notes/"></a></li>      -->
                         </div>
                 </div>
                 <div class="project-drop">
                     <li><a href="../Projects/">Projects</a></li>
                         <div class="project-slide">
-                             <!--    <li><a href="Notes/"></a></li>      -->
                         </div>
                 </div>
             </ul>
@@ -65,7 +64,42 @@
         </div>
 
         <div id="main">
-            
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Lecture</th>
+                        <th scope="col">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Introduction</td>
+                        <td>
+                            <a href="Notes/Introduction.pdf" target="_blank" role="button" class="btn btn-primary btn-sm">Introduction</a>
+                            <a href="Notes/JavaObjects.pdf" role="button" target="_blank"  class="btn btn-primary btn-sm">Java Objects</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Array</td>
+                        <td>
+                            <a href="#" role="button" class="btn btn-primary btn-sm">Arrays</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>LinkedList</td>
+                        <td><a href="#" role="button" class="btn btn-primary btn-sm">Linked List</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Algorithm Analysis</td>
+                        <td><a href="#" role="button" class="btn btn-primary btn-sm">Analysis</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <script>
