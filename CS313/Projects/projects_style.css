@@ -14,12 +14,13 @@ body{
 }
 header{
     background-image: url('../img/city3.jpg');
-    background-position-y: -450px;
-    color: #fff;
+    background-position-y: -300px;
+    color: #ffffff;
     padding-top: 0;
     min-width: 70px;
     min-height: 70px;
     border-bottom:#ffffff 3px solid;
+    opacity: 0.7;
 }
 header a{
     color: #ffffff;
@@ -29,10 +30,6 @@ header ul{
     list-style: none;
     padding:0;
     font-size: 25px;
-    background: rgba(17, 17, 17,0.7);
-    border-radius: 20px;
-    padding: 5px;
-    color: #fff;
 }
 header li{
     padding: 0;
@@ -45,13 +42,13 @@ header #logo{
     margin-top: 30px;
     font-size: 30px;
 }
-.navbar{
+.navbar_{
     background-color: #35424a;
     overflow:hidden;
     height:63px;
 
 }
-.navbar a{
+.navbar_ a{
     float:left;
     display:block;
     color: #ffffff;
@@ -61,12 +58,12 @@ header #logo{
     font-size:20px;
 }
 
-.navbar ul{
+.navbar_ ul{
     margin:3px 0 3px 0;
     list-style: none;
 }
 
-.navbar a:hover{
+.navbar_ a:hover{
     background-color:#dddddd;
     font-weight: bold;
     color: #28b9f3;
@@ -189,24 +186,16 @@ header #logo{
     margin-left:50px;
 }
 
-#main a{
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-}
 #main{
     background-color: #2b2a2a;
+    color:#fff;
     overflow: hidden;
     border-bottom:#ffffff 1px solid;
     padding: 0 300px;
 }
-
-.text{
-    background-color: rgba(0, 0, 0, 0.7);
-    display:inline-block;
-    padding:5px;
-    border-radius: 10px;
-
+#main a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .foot{
@@ -216,10 +205,12 @@ header #logo{
     display: flex;
     padding: 0 20px;
     color: #fff;
+    
 }
 .foot .name{
     padding-right: 100px;
 }
+
 @media(max-width:800px){
     h1{
         font-size: 2rem;
@@ -228,7 +219,7 @@ header #logo{
         font-size: 1rem; 
         padding:0;
     }
-    .navbar-nav{
+    .navbar_nav{
         display: none;
     }
     .foot{
